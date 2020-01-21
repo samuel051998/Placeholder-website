@@ -1,0 +1,31 @@
+@import  '../sass/variables';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#content {
+
+    background-color: lime;
+
+    #v1 {
+        background-color: black;
+        width: $fullwidth;
+        height: $fullheight;
+    }
+    
+    #v2 {
+        background-color: gray;
+        width: $fullwidth;
+        height: $fullheight;
+    }
+
+    #footer {
+        width: $fullwidth;
+        height: 20vh;
+    }
+}
+
