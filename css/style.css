@@ -4,7 +4,6 @@
   box-sizing: border-box;
   overflow-x: hidden;
 }
-
 #content {
   background-color: lime;
 }
@@ -22,5 +21,3 @@
   width: 100vw;
   height: 20vh;
 }
-
-/*# sourceMappingURL=style.css.map */
