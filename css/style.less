@@ -9,13 +9,13 @@
 }
 
 .spacing {
-    width: 85vw;
+    width: @contentWidth;
     margin: 0 auto;
 }
 
 
 #content {
-    width: 100vw;
+    width: @fullWidth;
     height: auto;
     background-color: lime;
 
@@ -28,7 +28,7 @@
         height: @fullHeight;
 
         .navbar {
-            width: 85vw;
+            width: @contentWidth;
             height: auto;
             display: flex;
             flex-direction: column;
@@ -69,7 +69,6 @@
                     display: flex;
                     flex: 1;
                     //margin-top: 1vh;
-                    
                     
                     a {
                         position: relative;
