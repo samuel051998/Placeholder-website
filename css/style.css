@@ -7,13 +7,20 @@
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
 }
+.spacing {
+  width: 85vw;
+  margin: 0 auto;
+}
 #content {
   width: 100vw;
   height: auto;
   background-color: lime;
 }
 #content #s1 {
-  background-color: black;
+  background-image: url("/assets/images/1261770.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 100vw;
   height: 100vh;
 }
@@ -31,12 +38,13 @@
   margin: auto;
 }
 #content #s1 .navbar .image svg {
-  fill: white;
+  fill: #020202;
   width: 23vw;
   height: auto;
+  cursor: default;
 }
 #content #s1 .navbar hr {
-  border: 1px solid white;
+  border: 1px solid #020202;
   width: 28vw;
   margin: auto;
   margin-top: 1vh;
@@ -47,19 +55,18 @@
   width: 28vw;
   height: auto;
   margin: auto;
-  font-size: 1.1em;
+  font-size: 0.8em;
   font-weight: 600;
   justify-content: center;
 }
 #content #s1 .navbar ul li {
   display: flex;
   flex: 1;
-  margin-top: 1vh;
 }
 #content #s1 .navbar ul li a {
   position: relative;
   text-decoration: none;
-  color: white;
+  color: #020202;
   overflow: hidden;
   letter-spacing: 0.15rem;
   transition: color 0.3s cubic-bezier(0.11, 0.7, 0, 1);
@@ -67,7 +74,7 @@
   text-align: center;
 }
 #content #s1 .navbar ul li a:hover {
-  color: black;
+  color: white;
 }
 #content #s1 .navbar ul li .linkEffect {
   z-index: 1;
@@ -80,7 +87,7 @@
   right: 0;
   left: 0;
   display: block;
-  background-color: white;
+  background-color: #020202;
   content: "";
   transform: translate3d(0, 100%, 0);
   z-index: -1;
@@ -90,7 +97,18 @@
   transition: transform 0.3s cubic-bezier(0.11, 0.7, 0, 1);
 }
 #content #s1 .navbar ul li .linkEffect:hover {
-  color: black;
+  color: white;
+}
+#content #s1 .contents1 {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+}
+#content #s1 .contents1 img {
+  margin-top: 3vh;
+  width: 60%;
+  height: auto;
 }
 #content #chisiamo {
   background-color: gray;
