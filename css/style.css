@@ -16,6 +16,38 @@
   height: auto;
   background-color: lime;
 }
+#content .icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  float: right;
+}
+#content .icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 8px;
+  transition: all 0.3s ease;
+  font-size: 15px;
+  line-height: 8px;
+}
+#content .icstyle {
+  background-color: #020202;
+  color: white;
+}
+#content .facebook:hover {
+  background: #3B5998;
+  color: white;
+}
+#content .twitter:hover {
+  background: #55ACEE;
+  color: white;
+}
+#content .youtube:hover {
+  background: #bb0000;
+  color: white;
+}
 #content #s1 {
   background-image: url("/assets/images/1261770.jpg");
   background-repeat: no-repeat;
@@ -80,7 +112,7 @@
   z-index: 1;
   padding: 2px 6px;
 }
-#content #s1 .navbar ul li .linkEffect:after {
+#content #s1 .navbar ul li .linkEffect::after {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -92,7 +124,7 @@
   transform: translate3d(0, 100%, 0);
   z-index: -1;
 }
-#content #s1 .navbar ul li .linkEffect:hover:after {
+#content #s1 .navbar ul li .linkEffect:hover::after {
   transform: translate3d(0, 0, 0);
   transition: transform 0.3s cubic-bezier(0.11, 0.7, 0, 1);
 }
