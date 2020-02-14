@@ -1,2 +1,2 @@
-# En?gma website
-Sito sponsorizzazione gioco "En?gma"
+# Placeholder website
+Sito presentazione progetto

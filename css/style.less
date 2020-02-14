@@ -1,8 +1,11 @@
+@import "_variables.less";
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #content {
@@ -11,10 +14,10 @@
 
     background-color: lime;
 
-    #v1 {
+    #s1 {
         background-color: black;
-        width: 100vw;
-        height: 100vh;
+        width: @fullWidth;
+        height: @fullHeight;
         
         .navbar {
             width: 85vw;
@@ -23,36 +26,94 @@
             flex-direction: column;
             flex: 1;
             margin: auto;
-            margin-top: 3vh;
-            margin-bottom: 3vh;
+            margin-top: 1vh;
+            margin-bottom: 1vh;
 
             .image {
                 margin: auto;
 
                 svg {
-                    fill: white;
-                    width: 35vw;
+                    fill: @primary;
+                    width: 23vw;
                     height: auto;
                 }
             }
 
             hr {
                 border: 1px solid white;
-                width: 45vw;
+                width: 28vw;
                 margin: auto;
-                margin-top: 2vh;
+                margin-top: 1vh;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                width: 28vw;
+                height: auto;
+                margin: auto;
+                font-size: 1.1em;
+                font-weight: 600;
+                justify-content: center;
+
+                li {
+                    display: flex;
+                    flex: 1;
+                    margin-top: 1vh;
+                    
+                    
+                    a {
+                        position: relative;
+                        text-decoration: none;
+                        color: @primary;
+                        overflow: hidden;
+                        letter-spacing: .15rem;
+                        transition: color .3s cubic-bezier(0.11, 0.7, 0, 1);
+                        flex: 1;
+                        text-align: center;
+                    }
+
+                    a:hover{
+                        color: black;
+                    }
+                    
+                    .linkEffect {
+                        z-index: 1;
+                        padding: 2px 6px;
+                    }
+
+                    .linkEffect:after {
+                        position: absolute;
+                        top: 0; bottom: 0;
+                        right: 0; left: 0;
+                        display: block;
+                        background-color: @primary;
+                        content: "";
+                        transform: translate3d(0,100%,0);
+                        z-index: -1;
+                    }
+
+                    .linkEffect:hover:after {
+                        transform: translate3d(0,0,0);
+                        transition: transform .3s cubic-bezier(0.11, 0.7, 0, 1);
+                    }
+
+                    .linkEffect:hover{
+                        color: black;
+                    }
+                }
             }
         }
     }
     
-    #v2 {
+    #chisiamo {
         background-color: gray;
-        width: 100vw;
-        height: 100vh;
+        width: @fullWidth;
+        height: @fullHeight;
     }
 
     #footer {
-        width: 100vw;
+        width: @fullWidth;
         height: 20vh;
     }
 }

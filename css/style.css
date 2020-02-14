@@ -1,44 +1,98 @@
+/* ########### VARIABILI DIMENSIONI ########### */
+/* ########### VARIABILI COLORI ########### */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
 }
 #content {
   width: 100vw;
   height: auto;
   background-color: lime;
 }
-#content #v1 {
+#content #s1 {
   background-color: black;
   width: 100vw;
   height: 100vh;
 }
-#content #v1 .navbar {
+#content #s1 .navbar {
   width: 85vw;
   height: auto;
   display: flex;
   flex-direction: column;
   flex: 1;
   margin: auto;
-  margin-top: 3vh;
-  margin-bottom: 3vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
 }
-#content #v1 .navbar .image {
+#content #s1 .navbar .image {
   margin: auto;
 }
-#content #v1 .navbar .image svg {
+#content #s1 .navbar .image svg {
   fill: white;
-  width: 35vw;
+  width: 23vw;
   height: auto;
 }
-#content #v1 .navbar hr {
+#content #s1 .navbar hr {
   border: 1px solid white;
-  width: 45vw;
+  width: 28vw;
   margin: auto;
-  margin-top: 2vh;
+  margin-top: 1vh;
 }
-#content #v2 {
+#content #s1 .navbar ul {
+  display: flex;
+  flex-direction: row;
+  width: 28vw;
+  height: auto;
+  margin: auto;
+  font-size: 1.1em;
+  font-weight: 600;
+  justify-content: center;
+}
+#content #s1 .navbar ul li {
+  display: flex;
+  flex: 1;
+  margin-top: 1vh;
+}
+#content #s1 .navbar ul li a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  overflow: hidden;
+  letter-spacing: 0.15rem;
+  transition: color 0.3s cubic-bezier(0.11, 0.7, 0, 1);
+  flex: 1;
+  text-align: center;
+}
+#content #s1 .navbar ul li a:hover {
+  color: black;
+}
+#content #s1 .navbar ul li .linkEffect {
+  z-index: 1;
+  padding: 2px 6px;
+}
+#content #s1 .navbar ul li .linkEffect:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: block;
+  background-color: white;
+  content: "";
+  transform: translate3d(0, 100%, 0);
+  z-index: -1;
+}
+#content #s1 .navbar ul li .linkEffect:hover:after {
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.3s cubic-bezier(0.11, 0.7, 0, 1);
+}
+#content #s1 .navbar ul li .linkEffect:hover {
+  color: black;
+}
+#content #chisiamo {
   background-color: gray;
   width: 100vw;
   height: 100vh;
