@@ -5,6 +5,8 @@
   overflow-x: hidden;
 }
 #content {
+  width: 100vw;
+  height: auto;
   background-color: lime;
 }
 #content #v1 {
@@ -12,8 +14,32 @@
   width: 100vw;
   height: 100vh;
 }
-#content #chisiamo {
-  background-color: black;
+#content #v1 .navbar {
+  width: 85vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: auto;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+#content #v1 .navbar .image {
+  margin: auto;
+}
+#content #v1 .navbar .image svg {
+  fill: white;
+  width: 35vw;
+  height: auto;
+}
+#content #v1 .navbar hr {
+  border: 1px solid white;
+  width: 45vw;
+  margin: auto;
+  margin-top: 2vh;
+}
+#content #v2 {
+  background-color: gray;
   width: 100vw;
   height: 100vh;
 }

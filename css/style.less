@@ -6,6 +6,8 @@
 }
 
 #content {
+    width: 100vw;
+    height: auto;
 
     background-color: lime;
 
@@ -13,6 +15,34 @@
         background-color: black;
         width: 100vw;
         height: 100vh;
+        
+        .navbar {
+            width: 85vw;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            margin: auto;
+            margin-top: 3vh;
+            margin-bottom: 3vh;
+
+            .image {
+                margin: auto;
+
+                svg {
+                    fill: white;
+                    width: 35vw;
+                    height: auto;
+                }
+            }
+
+            hr {
+                border: 1px solid white;
+                width: 45vw;
+                margin: auto;
+                margin-top: 2vh;
+            }
+        }
     }
     
     #v2 {
@@ -26,4 +56,3 @@
         height: 20vh;
     }
 }
-
