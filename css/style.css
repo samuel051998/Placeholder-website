@@ -19,10 +19,10 @@
 #content .icon-bar {
   position: fixed;
   top: 50%;
+  left: 97.7%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  float: right;
 }
 #content .icon-bar a {
   display: block;
@@ -38,15 +38,15 @@
 }
 #content .facebook:hover {
   background: #3B5998;
-  color: white;
 }
 #content .twitter:hover {
   background: #55ACEE;
-  color: white;
+}
+#content .instagram:hover {
+  background: #E1306C;
 }
 #content .youtube:hover {
   background: #bb0000;
-  color: white;
 }
 #content #s1 {
   background-image: url("/assets/images/1261770.jpg");
@@ -136,11 +136,7 @@
   flex: 1;
   flex-direction: row;
   justify-content: center;
-}
-#content #s1 .contents1 img {
   margin-top: 3vh;
-  width: 60%;
-  height: auto;
 }
 #content #chisiamo {
   background-color: gray;
