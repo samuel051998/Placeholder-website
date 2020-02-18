@@ -4,8 +4,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .spacing {
@@ -17,24 +20,42 @@
 #content {
     width: @fullWidth;
     height: auto;
-    background-color: lime;
+    background-color: purple;
 
     .icon-bar {
         position: fixed;
         top: 50%;
-        left: 97.7%;
+        left: 97.5%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
+
+        a {
+            display: block;
+            text-align: center;
+            padding: 8px;
+            transition: all 0.3s ease;
+            font-size: 15px;
+            line-height: 8px;
+        }
     }
-      
-    .icon-bar a {
-        display: block;
-        text-align: center;
-        padding: 8px;
-        transition: all 0.3s ease;
-        font-size: 15px;
-        line-height: 8px;
+
+    .back-up {
+        position: fixed;
+        top: 96%;
+        left: 92%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+
+        a {
+            display: block;
+            text-align: center;
+            padding: 8px;
+            transition: all 0.3s ease;
+            font-size: 15px;
+            line-height: 5px;
+        }
     }
 
     .icstyle {
@@ -43,19 +64,24 @@
     }
 
     .facebook:hover {
-        background: #3B5998;
+        background: @facebookColor;
     }
     
     .twitter:hover {
-        background: #55ACEE;
+        background: @twitterColor;
     }
 
     .instagram:hover {
-        background: #E1306C;
+        background: @instagramColor;
     }
     
     .youtube:hover {
-        background: #bb0000;
+        background: @youtubeColor;
+    }
+
+    .arrow:hover {
+        background: @primary;
+        color: @secondary;
     }
 
     #s1 {   
@@ -63,6 +89,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        background-attachment: fixed;
         width: @fullWidth;
         height: @fullHeight;
 
@@ -73,11 +100,9 @@
             flex-direction: column;
             flex: 1;
             margin: auto;
-            margin-top: 1vh;
-            margin-bottom: 1vh;
 
             .image {
-                margin: auto;
+                margin: 1vh auto;
 
                 svg {
                     fill: @secondary;
@@ -158,11 +183,12 @@
             flex-direction: row;
             justify-content: center;
             margin-top: 3vh;
+             
         }
     }
     
     #chisiamo {
-        background-color: gray;
+        background-color: @secondary;
         width: @fullWidth;
         height: @fullHeight;
     }

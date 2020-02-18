@@ -4,8 +4,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
+}
+body {
+  overflow-x: hidden;
 }
 .spacing {
   width: 85vw;
@@ -14,12 +16,12 @@
 #content {
   width: 100vw;
   height: auto;
-  background-color: lime;
+  background-color: purple;
 }
 #content .icon-bar {
   position: fixed;
   top: 50%;
-  left: 97.7%;
+  left: 97.5%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -31,6 +33,22 @@
   transition: all 0.3s ease;
   font-size: 15px;
   line-height: 8px;
+}
+#content .back-up {
+  position: fixed;
+  top: 96%;
+  left: 92%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#content .back-up a {
+  display: block;
+  text-align: center;
+  padding: 8px;
+  transition: all 0.3s ease;
+  font-size: 15px;
+  line-height: 5px;
 }
 #content .icstyle {
   background-color: #020202;
@@ -48,11 +66,16 @@
 #content .youtube:hover {
   background: #bb0000;
 }
+#content .arrow:hover {
+  background: white;
+  color: #020202;
+}
 #content #s1 {
   background-image: url("/assets/images/1261770.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   width: 100vw;
   height: 100vh;
 }
@@ -63,11 +86,9 @@
   flex-direction: column;
   flex: 1;
   margin: auto;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
 }
 #content #s1 .navbar .image {
-  margin: auto;
+  margin: 1vh auto;
 }
 #content #s1 .navbar .image svg {
   fill: #020202;
@@ -139,7 +160,7 @@
   margin-top: 3vh;
 }
 #content #chisiamo {
-  background-color: gray;
+  background-color: #020202;
   width: 100vw;
   height: 100vh;
 }
