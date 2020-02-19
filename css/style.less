@@ -25,10 +25,11 @@ body {
     .icon-bar {
         position: fixed;
         top: 50%;
-        left: 97.5%;
+        left: 98.3%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
+        z-index: 2;
 
         a {
             display: block;
@@ -42,11 +43,12 @@ body {
 
     .back-up {
         position: fixed;
-        top: 96%;
+        top: 97.5%;
         left: 92%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
+        z-index: 2;
 
         a {
             display: block;
@@ -84,14 +86,20 @@ body {
         color: @secondary;
     }
 
-    #s1 {   
-        background-image: url("/assets/images/1261770.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
+    #s1 {
         width: @fullWidth;
         height: @fullHeight;
+        background: #ae76d7 url(../assets/images/sky.png) no-repeat top center;
+
+        #scene {
+            position: absolute;
+            z-index: 1;
+
+            .img-size {
+                width: @fullWidth;
+                height: @fullHeight
+            }
+        }
 
         .navbar {
             width: @contentWidth;
@@ -100,6 +108,8 @@ body {
             flex-direction: column;
             flex: 1;
             margin: auto;
+            position: absolute;
+            z-index: 10;
 
             .image {
                 margin: 1vh auto;
@@ -132,7 +142,6 @@ body {
                 li {
                     display: flex;
                     flex: 1;
-                    //margin-top: 1vh;
                     
                     a {
                         position: relative;
@@ -180,10 +189,14 @@ body {
         .contents1 {
             display: flex;
             flex: 1;
+            position: relative;
             flex-direction: row;
             justify-content: center;
-            margin-top: 3vh;
-             
+            z-index: 9;
+
+            .videoContainer {
+                margin-top: 25vh;
+            }
         }
     }
     

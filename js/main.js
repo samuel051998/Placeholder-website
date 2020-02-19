@@ -3,3 +3,6 @@
     scrollEase: 0.1,
     maxOffset: 500
 });*/
+
+var scene = document.getElementById('scene');
+var parallax = new Parallax(scene);
