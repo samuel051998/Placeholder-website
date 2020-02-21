@@ -196,6 +196,7 @@ body {
 
             .videoContainer {
                 margin-top: 27vh;
+                
             }
         }
     }
@@ -204,6 +205,83 @@ body {
         background-color: @secondary;
         width: @fullWidth;
         height: @fullHeight;
+
+        .title {
+            width: @contentWidth;
+            height: auto;
+            top: 10%;
+            h1 {
+                padding: 2vh 0 5vh 0;
+                color: @primary;
+                font-size: 3em;
+                letter-spacing: 0.2em;
+                
+            }
+        }
+
+        .illustration {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            float: left;
+            width: 45vw;
+            height: auto;
+
+            .ill {
+                width: 35vw;
+                height: auto;
+            }
+        }
+
+        .text {
+            width: 40vw;
+            height: auto;
+            float: right;
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+
+            .paragraph {
+                letter-spacing: 0.1em;
+                color: @primary;
+                line-height: 1.6;
+                font-size: 1em;
+            }
+        }
+
+        .team {
+
+            width: 40vw;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            float: right;
+
+            .list {
+                color: @primary;
+                list-style: none; 
+                
+                li {
+                    .sprite {
+                        width: 64px;
+                        height: 64px;
+                        display: flex;
+                        flex: 1;
+                        flex-direction: row;
+                        float: left;
+                        
+                    }
+
+                    label {
+                        display: flex;
+                        flex-direction: column;
+                        flex: 1;
+                        padding: 5px;
+                    }
+                }
+            }
+        }
     }
 
     #footer {
