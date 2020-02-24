@@ -9,6 +9,12 @@
 body {
   overflow-x: hidden;
 }
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
 .spacing {
   width: 85vw;
   margin: 0 auto;
@@ -17,11 +23,42 @@ body {
   width: 100vw;
   height: auto;
   background-color: purple;
+  /* ##### WHITE ICON BAR MODE #####
+    .icstyle {
+        background-color: @primary; 
+        color: @secondary;
+    }
+
+    .facebook:hover {
+        background: @facebookColor;
+        color: @primary;
+    }
+    
+    .twitter:hover {
+        background: @twitterColor;
+        color: @primary;
+    }
+
+    .instagram:hover {
+        background: @instagramColor;
+        color: @primary;
+    }
+    
+    .youtube:hover {
+        background: @youtubeColor;
+        color: @primary;
+    }
+
+    .arrow:hover {
+        background: @primary;
+        color: @secondary;
+    }
+    */
 }
 #content .icon-bar {
   position: fixed;
   top: 50%;
-  left: 98.3%;
+  left: 97.9%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -37,7 +74,7 @@ body {
 }
 #content .back-up {
   position: fixed;
-  top: 97.5%;
+  top: 97.8%;
   left: 92%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -98,11 +135,13 @@ body {
 #content #s1 .navbar .image {
   margin: 1vh auto;
 }
-#content #s1 .navbar .image svg {
+#content #s1 .navbar .image a {
+  text-decoration: none;
+}
+#content #s1 .navbar .image a svg {
   fill: #020202;
   width: 23vw;
   height: auto;
-  cursor: default;
 }
 #content #s1 .navbar hr {
   border: 1px solid #020202;
@@ -176,36 +215,32 @@ body {
   width: 100vw;
   height: 100vh;
 }
-#content #chisiamo .title {
-  width: 85vw;
-  height: auto;
-  top: 10%;
-}
-#content #chisiamo .title h1 {
-  padding: 2vh 0 5vh 0;
-  color: white;
-  font-size: 3em;
-  letter-spacing: 0.2em;
-}
 #content #chisiamo .illustration {
   display: flex;
   flex-direction: row;
   flex: 1;
   float: left;
   width: 45vw;
-  height: auto;
+  height: 96vh;
+  margin-top: 6vh;
 }
 #content #chisiamo .illustration .ill {
   width: 35vw;
-  height: auto;
+  height: 45vh;
 }
 #content #chisiamo .text {
   width: 40vw;
-  height: auto;
+  height: 45vh;
   float: right;
-  display: flex;
   flex-direction: row;
   flex: 1;
+}
+#content #chisiamo .text h1 {
+  color: white;
+  font-size: 3em;
+  letter-spacing: 0.2em;
+  display: block;
+  padding: 5vh 0 3vh 0;
 }
 #content #chisiamo .text .paragraph {
   letter-spacing: 0.1em;
@@ -215,29 +250,41 @@ body {
 }
 #content #chisiamo .team {
   width: 40vw;
-  height: auto;
+  height: 10vh;
   display: flex;
   flex-direction: row;
   flex: 1;
   float: right;
+  padding: 5vh 0;
 }
 #content #chisiamo .team .list {
   color: white;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 3vh 0;
 }
-#content #chisiamo .team .list li .sprite {
+#content #chisiamo .team .list .element {
+  margin-top: 35px;
+}
+#content #chisiamo .team .list .element .sprite {
   width: 64px;
   height: 64px;
   display: flex;
   flex: 1;
   flex-direction: row;
   float: left;
+  margin-right: 15px;
 }
-#content #chisiamo .team .list li label {
+#content #chisiamo .team .list .element label {
   display: flex;
   flex-direction: column;
   flex: 1;
   padding: 5px;
+}
+#content #chisiamo .team .list-a {
+  margin-right: 3vw;
 }
 #content #footer {
   width: 100vw;

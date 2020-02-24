@@ -11,6 +11,14 @@ body {
     overflow-x: hidden;
 }
 
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
 .spacing {
     width: @contentWidth;
     margin: 0 auto;
@@ -25,7 +33,7 @@ body {
     .icon-bar {
         position: fixed;
         top: 50%;
-        left: 98.3%;
+        left: 97.9%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
@@ -43,7 +51,7 @@ body {
 
     .back-up {
         position: fixed;
-        top: 97.5%;
+        top: 97.8%;
         left: 92%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -61,7 +69,7 @@ body {
     }
 
     .icstyle {
-        background-color: @secondary;
+        background-color: @secondary; 
         color: @primary;
     }
 
@@ -85,6 +93,38 @@ body {
         background: @primary;
         color: @secondary;
     }
+
+    /* ##### WHITE ICON BAR MODE #####
+    .icstyle {
+        background-color: @primary; 
+        color: @secondary;
+    }
+
+    .facebook:hover {
+        background: @facebookColor;
+        color: @primary;
+    }
+    
+    .twitter:hover {
+        background: @twitterColor;
+        color: @primary;
+    }
+
+    .instagram:hover {
+        background: @instagramColor;
+        color: @primary;
+    }
+    
+    .youtube:hover {
+        background: @youtubeColor;
+        color: @primary;
+    }
+
+    .arrow:hover {
+        background: @primary;
+        color: @secondary;
+    }
+    */
 
     #s1 {
         width: @fullWidth;
@@ -114,12 +154,16 @@ body {
             .image {
                 margin: 1vh auto;
 
-                svg {
-                    fill: @secondary;
-                    width: 23vw;
-                    height: auto;
-                    cursor: default;
+                a {
+                    text-decoration: none;
+
+                    svg {
+                        fill: @secondary;
+                        width: 23vw;
+                        height: auto;
+                    }
                 }
+                
             }
 
             hr {
@@ -206,40 +250,35 @@ body {
         width: @fullWidth;
         height: @fullHeight;
 
-        .title {
-            width: @contentWidth;
-            height: auto;
-            top: 10%;
-            h1 {
-                padding: 2vh 0 5vh 0;
-                color: @primary;
-                font-size: 3em;
-                letter-spacing: 0.2em;
-                
-            }
-        }
-
         .illustration {
             display: flex;
             flex-direction: row;
             flex: 1;
             float: left;
             width: 45vw;
-            height: auto;
+            height: 96vh;
+            margin-top: 6vh;
 
             .ill {
                 width: 35vw;
-                height: auto;
+                height: 45vh;
             }
         }
 
         .text {
             width: 40vw;
-            height: auto;
+            height: 45vh;
             float: right;
-            display: flex;
             flex-direction: row;
             flex: 1;
+
+            h1 {
+                color: @primary;
+                font-size: 3em;
+                letter-spacing: 0.2em;
+                display: block;
+                padding: 5vh 0 3vh 0;
+            }
 
             .paragraph {
                 letter-spacing: 0.1em;
@@ -250,27 +289,33 @@ body {
         }
 
         .team {
-
             width: 40vw;
-            height: auto;
+            height: 10vh;
             display: flex;
             flex-direction: row;
             flex: 1;
             float: right;
+            padding: 5vh 0;
 
             .list {
                 color: @primary;
-                list-style: none; 
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                padding: 3vh 0;
                 
-                li {
+                .element {
+                    margin-top: 35px;
+
                     .sprite {
                         width: 64px;
                         height: 64px;
                         display: flex;
                         flex: 1;
                         flex-direction: row;
-                        float: left;
-                        
+                        float: left;  
+                        margin-right: 15px;
                     }
 
                     label {
@@ -281,6 +326,8 @@ body {
                     }
                 }
             }
+
+            .list-a {margin-right: 3vw;}
         }
     }
 
