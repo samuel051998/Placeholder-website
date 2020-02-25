@@ -24,3 +24,5 @@ function onPlayerReady(event) {
     player.playVideo();
 }
 // ############### YOUTUBE PLAYER ####################
+
+new SimpleBar(document.getElementById('scroll'), { autoHide: false });

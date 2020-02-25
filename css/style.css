@@ -9,6 +9,7 @@
 body {
   overflow-x: hidden;
 }
+/* ############ GENERAL CSS ############ */
 .left {
   float: left;
 }
@@ -19,7 +20,35 @@ body {
   width: 85vw;
   margin: 0 auto;
 }
-#content {
+.samurai:hover {
+  color: #726397;
+}
+.archer:hover {
+  color: #63b3d8;
+}
+.shinigami:hover {
+  color: #936916;
+}
+.spirit:hover {
+  color: #ad7b8c;
+}
+.ninja:hover {
+  color: #e6323e;
+}
+.demon:hover {
+  color: #4ca972;
+}
+.one {
+  justify-content: flex-start;
+}
+.two {
+  justify-content: center;
+}
+.three {
+  justify-content: flex-end;
+}
+/* ###################################### */
+.content {
   width: 100vw;
   height: auto;
   background-color: purple;
@@ -53,9 +82,10 @@ body {
         background: @primary;
         color: @secondary;
     }
+
     */
 }
-#content .icon-bar {
+.content .icon-bar {
   position: fixed;
   top: 50%;
   left: 97.9%;
@@ -64,7 +94,7 @@ body {
   transform: translateY(-50%);
   z-index: 2;
 }
-#content .icon-bar a {
+.content .icon-bar a {
   display: block;
   text-align: center;
   padding: 8px;
@@ -72,7 +102,7 @@ body {
   font-size: 15px;
   line-height: 8px;
 }
-#content .back-up {
+.content .back-up {
   position: fixed;
   top: 97.8%;
   left: 92%;
@@ -81,7 +111,7 @@ body {
   transform: translateY(-50%);
   z-index: 2;
 }
-#content .back-up a {
+.content .back-up a {
   display: block;
   text-align: center;
   padding: 8px;
@@ -89,40 +119,49 @@ body {
   font-size: 15px;
   line-height: 5px;
 }
-#content .icstyle {
+.content aside {
+  background-color: #0f0f0f;
+}
+.content .simplebar-scrollbar:before {
+  background-color: #4f4f4f;
+}
+.content .simplebar-scrollbar {
+  margin-right: 2px;
+}
+.content .icstyle {
   background-color: #020202;
   color: white;
 }
-#content .facebook:hover {
+.content .facebook:hover {
   background: #3B5998;
 }
-#content .twitter:hover {
+.content .twitter:hover {
   background: #55ACEE;
 }
-#content .instagram:hover {
+.content .instagram:hover {
   background: #E1306C;
 }
-#content .youtube:hover {
+.content .youtube:hover {
   background: #bb0000;
 }
-#content .arrow:hover {
+.content .arrow:hover {
   background: white;
   color: #020202;
 }
-#content #s1 {
+.content #s1 {
   width: 100vw;
   height: 100vh;
   background: #ae76d7 url(../assets/images/sky.png) no-repeat top center;
 }
-#content #s1 #scene {
+.content #s1 #scene {
   position: absolute;
   z-index: 1;
 }
-#content #s1 #scene .img-size {
+.content #s1 #scene .img-size {
   width: 100vw;
   height: 100vh;
 }
-#content #s1 .navbar {
+.content #s1 .navbar {
   width: 85vw;
   height: auto;
   display: flex;
@@ -132,24 +171,24 @@ body {
   position: absolute;
   z-index: 10;
 }
-#content #s1 .navbar .image {
+.content #s1 .navbar .image {
   margin: 1vh auto;
 }
-#content #s1 .navbar .image a {
+.content #s1 .navbar .image a {
   text-decoration: none;
 }
-#content #s1 .navbar .image a svg {
+.content #s1 .navbar .image a svg {
   fill: #020202;
   width: 23vw;
   height: auto;
 }
-#content #s1 .navbar hr {
+.content #s1 .navbar hr {
   border: 1px solid #020202;
   width: 28vw;
   margin: auto;
   margin-top: 1vh;
 }
-#content #s1 .navbar ul {
+.content #s1 .navbar ul {
   display: flex;
   flex-direction: row;
   width: 28vw;
@@ -159,11 +198,11 @@ body {
   font-weight: 600;
   justify-content: center;
 }
-#content #s1 .navbar ul li {
+.content #s1 .navbar ul li {
   display: flex;
   flex: 1;
 }
-#content #s1 .navbar ul li a {
+.content #s1 .navbar ul li a {
   position: relative;
   text-decoration: none;
   color: #020202;
@@ -173,14 +212,14 @@ body {
   flex: 1;
   text-align: center;
 }
-#content #s1 .navbar ul li a:hover {
+.content #s1 .navbar ul li a:hover {
   color: white;
 }
-#content #s1 .navbar ul li .linkEffect {
+.content #s1 .navbar ul li .linkEffect {
   z-index: 1;
   padding: 4px 6px;
 }
-#content #s1 .navbar ul li .linkEffect::after {
+.content #s1 .navbar ul li .linkEffect::after {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -192,14 +231,14 @@ body {
   transform: translate3d(0, 100%, 0);
   z-index: -1;
 }
-#content #s1 .navbar ul li .linkEffect:hover::after {
+.content #s1 .navbar ul li .linkEffect:hover::after {
   transform: translate3d(0, 0, 0);
   transition: transform 0.3s cubic-bezier(0.11, 0.7, 0, 1);
 }
-#content #s1 .navbar ul li .linkEffect:hover {
+.content #s1 .navbar ul li .linkEffect:hover {
   color: white;
 }
-#content #s1 .contents1 {
+.content #s1 .contents1 {
   display: flex;
   flex: 1;
   position: relative;
@@ -207,48 +246,63 @@ body {
   justify-content: center;
   z-index: 9;
 }
-#content #s1 .contents1 .videoContainer {
+.content #s1 .contents1 .videoContainer {
   margin-top: 27vh;
 }
-#content #chisiamo {
+.content #chisiamo {
   background-color: #020202;
   width: 100vw;
   height: 100vh;
 }
-#content #chisiamo .illustration {
+.content #chisiamo .illustration {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex: 1;
   float: left;
-  width: 45vw;
+  width: 40vw;
   height: 96vh;
   margin-top: 6vh;
 }
-#content #chisiamo .illustration .ill {
-  width: 35vw;
+.content #chisiamo .illustration .ill {
+  width: 40vw;
   height: 45vh;
 }
-#content #chisiamo .text {
+.content #chisiamo .illustration .box-images {
+  width: 40vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  margin: 12vh 0;
+}
+.content #chisiamo .illustration .box-images .image-container {
+  display: flex;
+  flex: 1;
+}
+.content #chisiamo .illustration .box-images .image-container .box-i {
+  width: 12vw;
+  height: 13vh;
+}
+.content #chisiamo .text {
   width: 40vw;
   height: 45vh;
   float: right;
   flex-direction: row;
   flex: 1;
 }
-#content #chisiamo .text h1 {
+.content #chisiamo .text h1 {
   color: white;
   font-size: 3em;
   letter-spacing: 0.2em;
   display: block;
   padding: 5vh 0 3vh 0;
 }
-#content #chisiamo .text .paragraph {
+.content #chisiamo .text .paragraph {
   letter-spacing: 0.1em;
   color: white;
   line-height: 1.6;
   font-size: 1em;
 }
-#content #chisiamo .team {
+.content #chisiamo .team {
   width: 40vw;
   height: 10vh;
   display: flex;
@@ -257,7 +311,7 @@ body {
   float: right;
   padding: 5vh 0;
 }
-#content #chisiamo .team .list {
+.content #chisiamo .team .list {
   color: white;
   list-style: none;
   display: flex;
@@ -265,10 +319,10 @@ body {
   flex: 1;
   padding: 3vh 0;
 }
-#content #chisiamo .team .list .element {
+.content #chisiamo .team .list .element {
   margin-top: 35px;
 }
-#content #chisiamo .team .list .element .sprite {
+.content #chisiamo .team .list .element .sprite {
   width: 64px;
   height: 64px;
   display: flex;
@@ -277,16 +331,25 @@ body {
   float: left;
   margin-right: 15px;
 }
-#content #chisiamo .team .list .element label {
+.content #chisiamo .team .list .element label {
   display: flex;
   flex-direction: column;
   flex: 1;
   padding: 5px;
+  letter-spacing: 0.2em;
 }
-#content #chisiamo .team .list-a {
+.content #chisiamo .team .list .element .name {
+  font-weight: bolder;
+  transition: all 0.3s ease;
+}
+.content #chisiamo .team .list .element .role {
+  font-weight: lighter;
+  color: #b1b1b1;
+}
+.content #chisiamo .team .list-a {
   margin-right: 3vw;
 }
-#content #footer {
+.content #footer {
   width: 100vw;
   height: 20vh;
 }

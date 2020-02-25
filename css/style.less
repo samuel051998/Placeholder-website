@@ -11,6 +11,8 @@ body {
     overflow-x: hidden;
 }
 
+/* ############ GENERAL CSS ############ */
+
 .left {
     float: left;
 }
@@ -24,8 +26,45 @@ body {
     margin: 0 auto;
 }
 
+.samurai:hover {
+    color: #726397;
+}
 
-#content {
+.archer:hover {
+    color: #63b3d8;
+}
+
+.shinigami:hover {
+    color: #936916;
+}
+
+.spirit:hover {
+    color: #ad7b8c;
+}
+
+.ninja:hover {
+    color: #e6323e;
+}
+
+.demon:hover {
+    color: #4ca972;
+}
+
+.one {
+    justify-content: flex-start;
+}
+
+.two {
+    justify-content: center;
+}
+
+.three {
+    justify-content: flex-end;
+}
+
+/* ###################################### */
+
+.content {
     width: @fullWidth;
     height: auto;
     background-color: purple;
@@ -66,6 +105,18 @@ body {
             font-size: 15px;
             line-height: 5px;
         }
+    }
+
+    aside {
+        background-color: lighten(@secondary, 5%);
+    }
+
+    .simplebar-scrollbar:before {
+        background-color: lighten(@secondary, 30%);
+    }
+
+    .simplebar-scrollbar {
+        margin-right: 2px;
     }
 
     .icstyle {
@@ -124,6 +175,7 @@ body {
         background: @primary;
         color: @secondary;
     }
+
     */
 
     #s1 {
@@ -239,8 +291,7 @@ body {
             z-index: 9;
 
             .videoContainer {
-                margin-top: 27vh;
-                
+                margin-top: 27vh; 
             }
         }
     }
@@ -252,21 +303,39 @@ body {
 
         .illustration {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             flex: 1;
             float: left;
-            width: 45vw;
+            width: @midPage;
             height: 96vh;
             margin-top: 6vh;
 
             .ill {
-                width: 35vw;
+                width: @midPage;
                 height: 45vh;
+            }
+
+            .box-images {
+                width: @midPage;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                margin: 12vh 0;
+                
+                .image-container {
+                    display: flex;
+                    flex: 1;
+
+                    .box-i {
+                        width: 12vw;
+                        height: 13vh;   
+                    }
+                }
             }
         }
 
         .text {
-            width: 40vw;
+            width: @midPage;
             height: 45vh;
             float: right;
             flex-direction: row;
@@ -289,7 +358,7 @@ body {
         }
 
         .team {
-            width: 40vw;
+            width: @midPage;
             height: 10vh;
             display: flex;
             flex-direction: row;
@@ -323,11 +392,24 @@ body {
                         flex-direction: column;
                         flex: 1;
                         padding: 5px;
+                        letter-spacing: 0.2em;
+                    }
+
+                    .name {
+                        font-weight: bolder;
+                        transition: all 0.3s ease;
+                    }
+
+                    .role {
+                        font-weight: lighter;
+                        color: @sublabel;
                     }
                 }
             }
 
-            .list-a {margin-right: 3vw;}
+            .list-a {
+                margin-right: 3vw;
+            }
         }
     }
 

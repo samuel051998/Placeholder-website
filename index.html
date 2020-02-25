@@ -8,12 +8,13 @@
     <link rel="icon" href="assets/ico/faviconPlaceholderBlack.ico" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/simplebar.css"/>
     <script src="https://kit.fontawesome.com/5d00fb20cf.js" crossorigin="anonymous"></script>
     <title>Placeholder</title>
 </head>
 <body>
-    <main id="content">
-
+    <main id="scroll" class="content">
+        
         <div class="icon-bar">
             <a href="#" class="icstyle facebook"><i class="fab fa-facebook-f"></i></a> 
             <a href="#" class="icstyle twitter"><i class="fab fa-twitter"></i></a> 
@@ -28,10 +29,10 @@
 
         <section id="s1">
             <ul id="scene">
-                <li class="layer" data-depth="0.40"><img class="img-size" src="assets/images/midClouds.png"></li>
-                <li class="layer" data-depth="0.10"><img class="img-size" src="assets/images/stars.png"></li>
-                <li class="layer" data-depth="0.20"><img class="img-size" src="assets/images/highClouds.png"></li> 
-                <li class="layer" data-depth="0.00"><img class="img-size" src="assets/images/mountains.png"></li>
+                <li class="layer" data-depth="0.40"><img class="img-size" src="assets/images/BG/midClouds.png"></li>
+                <li class="layer" data-depth="0.10"><img class="img-size" src="assets/images/BG/stars.png"></li>
+                <li class="layer" data-depth="0.20"><img class="img-size" src="assets/images/BG/highClouds.png"></li> 
+                <li class="layer" data-depth="0.00"><img class="img-size" src="assets/images/BG/mountains.png"></li>
             </ul>
             <div class="spacing">
                 <div class="navbar">
@@ -56,6 +57,11 @@
             <div class="spacing">
                 <div class="illustration">
                     <img class="ill" src="assets/images/illustration.png">
+                    <div class="box-images">
+                        <div class="image-container one"><img class="box-i" src="assets/images/illustration.png"></div>
+                        <div class="image-container two"><img class="box-i" src="assets/images/illustration.png"></div>
+                        <div class="image-container three"><img class="box-i" src="assets/images/illustration.png"></div>
+                    </div>
                 </div>
                 <div class="text">
                     <h1>Chi siamo?</h1>
@@ -70,36 +76,36 @@
                 <div class="team">
                     <ul class="list list-a left">
                         <li class="element">
-                            <img class="sprite" src="assets/images/d7pjniq-5ca6be48-2e9b-4886-a2ea-09eca79e9659.gif">
-                            <label>Federico Bolcato</label>
-                            <label>Programmatore</label>
+                            <img class="sprite" src="assets/gifs/samurai.gif">
+                            <label class="name samurai">Federico Bolcato</label>
+                            <label class="role">Programmatore</label>
                         </li>
                         <li class="element">
-                            <img class="sprite" src="assets/images/d7pjniq-5ca6be48-2e9b-4886-a2ea-09eca79e9659.gif">
-                            <label>Debora Carpene</label>
-                            <label>Programmatore</label>
+                            <img class="sprite" src="assets/gifs/elf_archer.gif">
+                            <label class="name archer">Debora Carpene</label>
+                            <label class="role">Programmatore</label>
                         </li>
                         <li class="element">
-                            <img class="sprite" src="assets/images/d7pjniq-5ca6be48-2e9b-4886-a2ea-09eca79e9659.gif">
-                            <label>Silvio Danzi</label>
-                            <label>Programmatore</label>
+                            <img class="sprite" src="assets/gifs/shinigami.gif">
+                            <label class="name shinigami">Silvio Danzi</label>
+                            <label class="role">Programmatore</label>
                         </li>
                     </ul>
                     <ul class="list right">
                         <li class="element">
-                            <img class="sprite" src="assets/images/d7pjniq-5ca6be48-2e9b-4886-a2ea-09eca79e9659.gif">
-                            <label>Samuele Giaccone</label>
-                            <label>Programmatore</label>
+                            <img class="sprite" src="assets/gifs/spirit.gif">
+                            <label class="name spirit">Samuele Giaccone</label>
+                            <label class="role">Programmatore</label>
                         </li>
                         <li class="element">
-                            <img class="sprite" src="assets/images/d7pjniq-5ca6be48-2e9b-4886-a2ea-09eca79e9659.gif">
-                            <label>Stefano Rossi</label>
-                            <label>Programmatore</label>
+                            <img class="sprite" src="assets/gifs/ninja.gif">
+                            <label class="name ninja">Stefano Rossi</label>
+                            <label class="role">Programmatore</label>
                         </li>
                         <li class="element">
-                            <img class="sprite" src="assets/images/d7pjniq-5ca6be48-2e9b-4886-a2ea-09eca79e9659.gif">
-                            <label>Francesco Zampieri</label>
-                            <label>Programmatore</label>
+                            <img class="sprite" src="assets/gifs/demon.gif">
+                            <label class="name demon">Francesco Zampieri</label>
+                            <label class="role">Programmatore</label>
                         </li>
                     </ul>
                 </div>
@@ -108,8 +114,12 @@
         <section id="footer"></div>
     </main>
 
+    <aside>
+            
+    </aside>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <script src="dist/smooth-scrollbar.js"></script>
+    <script src="dist/simplebar.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
