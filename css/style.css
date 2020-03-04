@@ -249,12 +249,12 @@ body {
 .content #s1 .contents1 .videoContainer {
   margin-top: 27vh;
 }
-.content #chisiamo {
+.content #chiSiamo {
   background-color: #020202;
   width: 100vw;
   height: 100vh;
 }
-.content #chisiamo .illustration {
+.content #chiSiamo .illustration {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -263,46 +263,46 @@ body {
   height: 96vh;
   margin-top: 6vh;
 }
-.content #chisiamo .illustration .ill {
+.content #chiSiamo .illustration .ill {
   width: 40vw;
   height: 45vh;
 }
-.content #chisiamo .illustration .box-images {
+.content #chiSiamo .illustration .box-images {
   width: 40vw;
   height: auto;
   display: flex;
   flex-direction: row;
   margin: 12vh 0;
 }
-.content #chisiamo .illustration .box-images .image-container {
+.content #chiSiamo .illustration .box-images .image-container {
   display: flex;
   flex: 1;
 }
-.content #chisiamo .illustration .box-images .image-container .box-i {
+.content #chiSiamo .illustration .box-images .image-container .box-i {
   width: 12vw;
   height: 13vh;
 }
-.content #chisiamo .text {
+.content #chiSiamo .text {
   width: 40vw;
   height: 45vh;
   float: right;
   flex-direction: row;
   flex: 1;
 }
-.content #chisiamo .text h1 {
+.content #chiSiamo .text h1 {
   color: white;
   font-size: 3em;
   letter-spacing: 0.2em;
   display: block;
   padding: 5vh 0 3vh 0;
 }
-.content #chisiamo .text .paragraph {
+.content #chiSiamo .text .paragraph {
   letter-spacing: 0.1em;
   color: white;
   line-height: 1.6;
   font-size: 1em;
 }
-.content #chisiamo .team {
+.content #chiSiamo .team {
   width: 40vw;
   height: 10vh;
   display: flex;
@@ -311,7 +311,7 @@ body {
   float: right;
   padding: 5vh 0;
 }
-.content #chisiamo .team .list {
+.content #chiSiamo .team .list {
   color: white;
   list-style: none;
   display: flex;
@@ -319,10 +319,10 @@ body {
   flex: 1;
   padding: 3vh 0;
 }
-.content #chisiamo .team .list .element {
+.content #chiSiamo .team .list .element {
   margin-top: 35px;
 }
-.content #chisiamo .team .list .element .sprite {
+.content #chiSiamo .team .list .element .sprite {
   width: 64px;
   height: 64px;
   display: flex;
@@ -331,23 +331,28 @@ body {
   float: left;
   margin-right: 15px;
 }
-.content #chisiamo .team .list .element label {
+.content #chiSiamo .team .list .element label {
   display: flex;
   flex-direction: column;
   flex: 1;
   padding: 5px;
   letter-spacing: 0.2em;
 }
-.content #chisiamo .team .list .element .name {
+.content #chiSiamo .team .list .element .name {
   font-weight: bolder;
   transition: all 0.3s ease;
 }
-.content #chisiamo .team .list .element .role {
+.content #chiSiamo .team .list .element .role {
   font-weight: lighter;
   color: #b1b1b1;
 }
-.content #chisiamo .team .list-a {
+.content #chiSiamo .team .list-a {
   margin-right: 3vw;
+}
+.content #progetto {
+  background-color: #38383b;
+  width: 100vw;
+  height: 100vh;
 }
 .content #footer {
   width: 100vw;
