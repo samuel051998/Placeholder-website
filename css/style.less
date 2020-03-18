@@ -1,5 +1,14 @@
 @import "_variables.less";
 
+@keyframes loading {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -60,6 +69,14 @@ body {
 
 .three {
     justify-content: flex-end;
+}
+
+.titleSect {
+    color: @primary;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+    display: block;
+    padding: 5vh 0 3vh 0;
 }
 
 /* ###################################### */
@@ -211,7 +228,7 @@ body {
 
                     svg {
                         fill: @secondary;
-                        width: 23vw;
+                        width: 16vw;
                         height: auto;
                     }
                 }
@@ -220,7 +237,7 @@ body {
 
             hr {
                 border: 1px solid @secondary;
-                width: 28vw;
+                width: 22vw;
                 margin: auto;
                 margin-top: 1vh;
             }
@@ -228,10 +245,10 @@ body {
             ul {
                 display: flex;
                 flex-direction: row;
-                width: 28vw;
+                width: 22vw;
                 height: auto;
                 margin: auto;
-                font-size: 0.8em;
+                font-size: 0.7em;
                 font-weight: 600;
                 justify-content: center;
 
@@ -280,6 +297,19 @@ body {
                     }
                 }
             }
+            
+            .payload {
+                margin: 35px auto;
+                padding: 20px;
+                background-color: rgba(0, 0, 0, 0.452);
+                border: 1px solid black;
+
+                .payloadText {
+                    font-size: 1.3em;
+                    font-weight: 100;
+                    color: rgb(243, 243, 243);
+                }
+            }
         }
 
         .contents1 {
@@ -291,7 +321,7 @@ body {
             z-index: 9;
 
             .videoContainer {
-                margin-top: 27vh; 
+                margin-top: 30vh; 
             }
         }
     }
@@ -305,49 +335,30 @@ body {
             display: flex;
             flex-direction: column;
             flex: 1;
+            float: right;
+            width: @midPage;
+            height: 41vh;
+            margin-top: 4vh;
+        }
+
+        /*.illustration {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
             float: left;
             width: @midPage;
-            height: 96vh;
-            margin-top: 6vh;
-
-            .ill {
-                width: @midPage;
-                height: 45vh;
-            }
-
-            .box-images {
-                width: @midPage;
-                height: auto;
-                display: flex;
-                flex-direction: row;
-                margin: 12vh 0;
-                
-                .image-container {
-                    display: flex;
-                    flex: 1;
-
-                    .box-i {
-                        width: 12vw;
-                        height: 13vh;   
-                    }
-                }
-            }
-        }
+            height: 41vh;
+            margin-top: 4vh;
+        }*/
 
         .text {
             width: @midPage;
-            height: 45vh;
-            float: right;
+            height: 53vh;
+            float: left;
             flex-direction: row;
             flex: 1;
 
-            h1 {
-                color: @primary;
-                font-size: 3em;
-                letter-spacing: 0.2em;
-                display: block;
-                padding: 5vh 0 3vh 0;
-            }
+            
 
             .paragraph {
                 letter-spacing: 0.1em;
@@ -358,8 +369,8 @@ body {
         }
 
         .team {
-            width: @midPage;
-            height: 10vh;
+            width: 78vw;
+            height: 39vh;
             display: flex;
             flex-direction: row;
             flex: 1;
@@ -378,8 +389,8 @@ body {
                     margin-top: 35px;
 
                     .sprite {
-                        width: 64px;
-                        height: 64px;
+                        width: 81px;
+                        height: 72px;
                         display: flex;
                         flex: 1;
                         flex-direction: row;
@@ -409,12 +420,20 @@ body {
 
             .list-a {
                 margin-right: 3vw;
-            }
+            } 
         }
+
+        
     }
 
     #progetto {
-        background-color: rgb(56, 56, 59);
+        background-color: #070918;
+        width: @fullWidth;
+        height: @fullHeight;    
+    }
+
+    #gioco {
+        background-color: rgb(95, 76, 110);
         width: @fullWidth;
         height: @fullHeight;    
     }

@@ -1,7 +1,3 @@
-
-
-
-
  // ############### PARALLAX ####################
 var scene = document.getElementById('scene');
 var parallax = new Parallax(scene);
@@ -24,5 +20,3 @@ function onPlayerReady(event) {
     player.playVideo();
 }
 // ############### YOUTUBE PLAYER ####################
-
-new SimpleBar(document.getElementById('scroll'), { autoHide: false });
