@@ -59,24 +59,41 @@ body {
     color: #4ca972;
 }
 
-.one {
-    justify-content: flex-start;
-}
-
-.two {
-    justify-content: center;
-}
-
-.three {
-    justify-content: flex-end;
-}
-
 .titleSect {
     color: @primary;
     font-size: 3em;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
+    font-weight: normal;
     display: block;
     padding: 5vh 0 3vh 0;
+}
+
+.dark {
+    color: @fontGrey !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.spacing {
+    width: @contentWidth;
+    margin: 0 auto;
+
+    .text {
+        height: 53vh;
+        float: left;
+        flex-direction: row;
+        flex: 1;
+    
+        .paragraph {
+            letter-spacing: 0.1em;
+            color: @primary;
+            line-height: 1.8    ;
+            font-size: 1em; //18px
+            font-weight: 200;
+        }
+    }
 }
 
 /* ###################################### */
@@ -84,7 +101,7 @@ body {
 .content {
     width: @fullWidth;
     height: auto;
-    background-color: purple;
+    background-color: @secondary;
 
     .icon-bar {
         position: fixed;
@@ -198,7 +215,7 @@ body {
     #s1 {
         width: @fullWidth;
         height: @fullHeight;
-        background: #ae76d7 url(../assets/images/sky.png) no-repeat top center;
+        background: #ae76d7 url(../assets/images/bg/sky.png) no-repeat top center;
 
         #scene {
             position: absolute;
@@ -327,46 +344,9 @@ body {
     }
     
     #chiSiamo {
-        background-color: @secondary;
+        background-color: @darkBlueBg;
         width: @fullWidth;
         height: @fullHeight;
-
-        .illustration {
-            display: flex;
-            flex-direction: column;
-            flex: 1;
-            float: right;
-            width: @midPage;
-            height: 41vh;
-            margin-top: 4vh;
-        }
-
-        /*.illustration {
-            display: flex;
-            flex-direction: column;
-            flex: 1;
-            float: left;
-            width: @midPage;
-            height: 41vh;
-            margin-top: 4vh;
-        }*/
-
-        .text {
-            width: @midPage;
-            height: 53vh;
-            float: left;
-            flex-direction: row;
-            flex: 1;
-
-            
-
-            .paragraph {
-                letter-spacing: 0.1em;
-                color: @primary;
-                line-height: 1.6;
-                font-size: 1em;
-            }
-        }
 
         .team {
             width: 78vw;
@@ -422,18 +402,60 @@ body {
                 margin-right: 3vw;
             } 
         }
-
-        
     }
 
     #progetto {
-        background-color: #070918;
+        background-color: @greyBg;
         width: @fullWidth;
         height: @fullHeight;    
     }
 
+    #divario {
+        background-color: @primary;
+        width: @fullWidth;
+        height: @fullHeight;
+
+                .spaceButton {
+                    width: 85vw;
+                    height: 20vh;
+                    margin: 100px auto;
+
+                    .cit {
+                        text-align: center;
+                        font-weight: 100;
+                        font-size: 21px;
+                        color: @fontGrey;
+                    }
+
+                    .button {
+                        margin: 30px auto;
+                        display: block;
+                        text-decoration: none;
+                        width: 225px;
+                        height: 45px;
+                        color: white;
+                        text-align: center;
+                        line-height: 37px;
+                        background-color: #00247C;
+                        border-bottom: 11px #00195C solid;
+                    }
+
+
+            
+        }
+
+            // .illustration {
+            //     width: @fullWidth;
+            //     height: calc(@fullHeight / 3);
+            //     background: url("../assets/images/illustrasions/socialDivide.png") no-repeat center;
+            //     background-size: cover;
+            //     background-position: center;
+            //     display: flex;
+            // }
+    }
+
     #gioco {
-        background-color: rgb(95, 76, 110);
+        background-color: @darkBlueBg;
         width: @fullWidth;
         height: @fullHeight;    
     }

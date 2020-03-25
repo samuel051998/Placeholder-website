@@ -46,27 +46,42 @@ body {
 .demon:hover {
   color: #4ca972;
 }
-.one {
-  justify-content: flex-start;
-}
-.two {
-  justify-content: center;
-}
-.three {
-  justify-content: flex-end;
-}
 .titleSect {
-  color: white;
+  color: #ffffff;
   font-size: 3em;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
+  font-weight: normal;
   display: block;
   padding: 5vh 0 3vh 0;
+}
+.dark {
+  color: #515151 !important;
+}
+.text-center {
+  text-align: center;
+}
+.spacing {
+  width: 85vw;
+  margin: 0 auto;
+}
+.spacing .text {
+  height: 53vh;
+  float: left;
+  flex-direction: row;
+  flex: 1;
+}
+.spacing .text .paragraph {
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  line-height: 1.8;
+  font-size: 1em;
+  font-weight: 200;
 }
 /* ###################################### */
 .content {
   width: 100vw;
   height: auto;
-  background-color: purple;
+  background-color: #020202;
   /* ##### WHITE ICON BAR MODE #####
     .icstyle {
         background-color: @primary; 
@@ -145,7 +160,7 @@ body {
 }
 .content .icstyle {
   background-color: #020202;
-  color: white;
+  color: #ffffff;
 }
 .content .facebook:hover {
   background: #3B5998;
@@ -160,13 +175,13 @@ body {
   background: #bb0000;
 }
 .content .arrow:hover {
-  background: white;
+  background: #ffffff;
   color: #020202;
 }
 .content #s1 {
   width: 100vw;
   height: 100vh;
-  background: #ae76d7 url(../assets/images/sky.png) no-repeat top center;
+  background: #ae76d7 url(../assets/images/bg/sky.png) no-repeat top center;
 }
 .content #s1 #scene {
   position: absolute;
@@ -228,7 +243,7 @@ body {
   text-align: center;
 }
 .content #s1 .navbar ul li a:hover {
-  color: white;
+  color: #ffffff;
 }
 .content #s1 .navbar ul li .linkEffect {
   z-index: 1;
@@ -251,7 +266,7 @@ body {
   transition: transform 0.3s cubic-bezier(0.11, 0.7, 0, 1);
 }
 .content #s1 .navbar ul li .linkEffect:hover {
-  color: white;
+  color: #ffffff;
 }
 .content #s1 .navbar .payload {
   margin: 35px auto;
@@ -276,40 +291,9 @@ body {
   margin-top: 30vh;
 }
 .content #chiSiamo {
-  background-color: #020202;
+  background-color: #070918;
   width: 100vw;
   height: 100vh;
-  /*.illustration {
-            display: flex;
-            flex-direction: column;
-            flex: 1;
-            float: left;
-            width: @midPage;
-            height: 41vh;
-            margin-top: 4vh;
-        }*/
-}
-.content #chiSiamo .illustration {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  float: right;
-  width: 40vw;
-  height: 41vh;
-  margin-top: 4vh;
-}
-.content #chiSiamo .text {
-  width: 40vw;
-  height: 53vh;
-  float: left;
-  flex-direction: row;
-  flex: 1;
-}
-.content #chiSiamo .text .paragraph {
-  letter-spacing: 0.1em;
-  color: white;
-  line-height: 1.6;
-  font-size: 1em;
 }
 .content #chiSiamo .team {
   width: 78vw;
@@ -321,7 +305,7 @@ body {
   padding: 5vh 0;
 }
 .content #chiSiamo .team .list {
-  color: white;
+  color: #ffffff;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -359,12 +343,40 @@ body {
   margin-right: 3vw;
 }
 .content #progetto {
-  background-color: #070918;
+  background-color: #cfcfcf;
   width: 100vw;
   height: 100vh;
 }
+.content #divario {
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+}
+.content #divario .spaceButton {
+  width: 85vw;
+  height: 20vh;
+  margin: 100px auto;
+}
+.content #divario .spaceButton .cit {
+  text-align: center;
+  font-weight: 100;
+  font-size: 21px;
+  color: #515151;
+}
+.content #divario .spaceButton .button {
+  margin: 30px auto;
+  display: block;
+  text-decoration: none;
+  width: 225px;
+  height: 45px;
+  color: white;
+  text-align: center;
+  line-height: 37px;
+  background-color: #00247C;
+  border-bottom: 11px #00195C solid;
+}
 .content #gioco {
-  background-color: #5f4c6e;
+  background-color: #070918;
   width: 100vw;
   height: 100vh;
 }
