@@ -18,6 +18,7 @@
 
 body {
     overflow-x: hidden;
+    background-color: @darkBlueBg;
 }
 
 /* ############ GENERAL CSS ############ */
@@ -44,11 +45,15 @@ body {
     margin: 0 auto;
 }
 
+.short {
+    height: 25vh !important;
+}
+
 .two-thirds {
     height: calc(@fullHeight * 2 / 3);
 }
 
-.closed {
+.closed, .hidden {
     display: none !important;
     opacity: 0;
 }
@@ -118,31 +123,16 @@ body {
     padding: 15px;
 }
 
+.longPage {
+    height: 120vh !important;
+}
+
 /* ###################################### */
 
 .content {
     width: @fullWidth;
     height: auto;
     background-color: @secondary;
-
-    .icon-bar {
-        position: fixed;
-        top: 50%;
-        left: 97.9%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        z-index: 2;
-
-        a {
-            display: block;
-            text-align: center;
-            padding: 8px;
-            transition: all 0.3s ease;
-            font-size: 15px;
-            line-height: 8px;
-        }
-    }
 
     .back-up {
         position: fixed;
@@ -160,6 +150,8 @@ body {
             transition: all 0.3s ease;
             font-size: 15px;
             line-height: 5px;
+            color: @primary;
+            background-color: @secondary;
         }
     }
 
@@ -175,64 +167,10 @@ body {
         margin-right: 2px;
     }
 
-    .icstyle {
-        background-color: @secondary; 
-        color: @primary;
-    }
-
-    .facebook:hover {
-        background: @facebookColor;
-    }
-    
-    .twitter:hover {
-        background: @twitterColor;
-    }
-
-    .instagram:hover {
-        background: @instagramColor;
-    }
-    
-    .youtube:hover {
-        background: @youtubeColor;
-    }
-
     .arrow:hover {
         background: @primary;
         color: @secondary;
     }
-
-    /* ##### WHITE ICON BAR MODE #####
-    .icstyle {
-        background-color: @primary; 
-        color: @secondary;
-    }
-
-    .facebook:hover {
-        background: @facebookColor;
-        color: @primary;
-    }
-    
-    .twitter:hover {
-        background: @twitterColor;
-        color: @primary;
-    }
-
-    .instagram:hover {
-        background: @instagramColor;
-        color: @primary;
-    }
-    
-    .youtube:hover {
-        background: @youtubeColor;
-        color: @primary;
-    }
-
-    .arrow:hover {
-        background: @primary;
-        color: @secondary;
-    }
-
-    */
 
     #s1 {
         width: @fullWidth;
@@ -271,7 +209,6 @@ body {
                         height: auto;
                     }
                 }
-                
             }
 
             hr {
@@ -335,8 +272,7 @@ body {
                         color: @primary;
                     }
                 }
-            }
-            
+            } 
         }
 
         .contents1 {
@@ -454,8 +390,8 @@ body {
             .button:hover {
                 background-color: rgb(23, 77, 216);
                 border-color: rgb(0, 37, 138);
+                transition: all 0.3s ease;
             }
-                
         }
 
         .imageIll {
@@ -520,7 +456,7 @@ body {
                             color: @primary;
                             outline: none;
 
-                            .plus {
+                            .sign {
                                 display: flex;
                                 justify-content: flex-end;
                                 font-size: 21px;
@@ -535,6 +471,7 @@ body {
                             font-size: 15px;
                             width: 550px;
                             padding: 30px;
+                            line-height: 1.8;
                         }
                     }
                 }
@@ -566,6 +503,56 @@ body {
 
     #footer {
         width: @fullWidth;
-        height: 20vh;
+        background-color: @darkBlueBg;
+
+        .icon-bar {
+            margin: 0 auto;
+            width: 25vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            background-color: none;
+
+            .icstyle {
+                display: flex;
+                flex: 1;
+                text-decoration: none;
+                color: @primary;
+                justify-content: center;
+                transition: all 0.3s ease;
+            }
+
+            .facebook:hover {
+                color: @facebookColor;
+            }
+        
+            .instagram:hover {
+                color: @instagramColor;
+            }
+            
+            .youtube:hover {
+                color: @youtubeColor;
+            }
+
+            .twitch:hover {
+                color: @twitchColor;
+            }
+        }
+
+        .credits {
+            border-top: 1px solid @primary;
+            margin: 13vh auto 0;
+            width: 45vw;
+            color: @primary;
+            text-align: center;
+            font-size: 14px;
+
+            span {
+                display: block;
+                padding: 28px;
+            }
+        }   
     }
 }

@@ -1,4 +1,6 @@
 /* ########### VARIABILI DIMENSIONI ########### */
+/* ########### VARIABILI DIMENSIONI ########### */
+/* ########### VARIABILI COLORI ########### */
 /* ########### VARIABILI COLORI ########### */
 @keyframes loading {
   0% {
@@ -16,6 +18,7 @@
 }
 body {
   overflow-x: hidden;
+  background-color: #070918;
 }
 /* ############ GENERAL CSS ############ */
 .left {
@@ -35,10 +38,14 @@ body {
   height: 100vh;
   margin: 0 auto;
 }
+.short {
+  height: 25vh !important;
+}
 .two-thirds {
   height: calc(100vh * 2 / 3);
 }
-.closed {
+.closed,
+.hidden {
   display: none !important;
   opacity: 0;
 }
@@ -94,60 +101,14 @@ body {
 .stretch {
   padding: 15px;
 }
+.longPage {
+  height: 120vh !important;
+}
 /* ###################################### */
 .content {
   width: 100vw;
   height: auto;
   background-color: #020202;
-  /* ##### WHITE ICON BAR MODE #####
-    .icstyle {
-        background-color: @primary; 
-        color: @secondary;
-    }
-
-    .facebook:hover {
-        background: @facebookColor;
-        color: @primary;
-    }
-    
-    .twitter:hover {
-        background: @twitterColor;
-        color: @primary;
-    }
-
-    .instagram:hover {
-        background: @instagramColor;
-        color: @primary;
-    }
-    
-    .youtube:hover {
-        background: @youtubeColor;
-        color: @primary;
-    }
-
-    .arrow:hover {
-        background: @primary;
-        color: @secondary;
-    }
-
-    */
-}
-.content .icon-bar {
-  position: fixed;
-  top: 50%;
-  left: 97.9%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  z-index: 2;
-}
-.content .icon-bar a {
-  display: block;
-  text-align: center;
-  padding: 8px;
-  transition: all 0.3s ease;
-  font-size: 15px;
-  line-height: 8px;
 }
 .content .back-up {
   position: fixed;
@@ -165,6 +126,8 @@ body {
   transition: all 0.3s ease;
   font-size: 15px;
   line-height: 5px;
+  color: #ffffff;
+  background-color: #020202;
 }
 .content aside {
   background-color: #0f0f0f;
@@ -174,22 +137,6 @@ body {
 }
 .content .simplebar-scrollbar {
   margin-right: 2px;
-}
-.content .icstyle {
-  background-color: #020202;
-  color: #ffffff;
-}
-.content .facebook:hover {
-  background: #3B5998;
-}
-.content .twitter:hover {
-  background: #55ACEE;
-}
-.content .instagram:hover {
-  background: #E1306C;
-}
-.content .youtube:hover {
-  background: #bb0000;
 }
 .content .arrow:hover {
   background: #ffffff;
@@ -385,6 +332,7 @@ body {
 .content #divario .spaceButton .button:hover {
   background-color: #174dd8;
   border-color: #00258a;
+  transition: all 0.3s ease;
 }
 .content #divario .imageIll {
   width: 100vw;
@@ -443,7 +391,7 @@ body {
   color: #ffffff;
   outline: none;
 }
-.content #gioco .container .ctn-el .el .hinner-container .fake-btn .plus {
+.content #gioco .container .ctn-el .el .hinner-container .fake-btn .sign {
   display: flex;
   justify-content: flex-end;
   font-size: 21px;
@@ -455,6 +403,7 @@ body {
   font-size: 15px;
   width: 550px;
   padding: 30px;
+  line-height: 1.8;
 }
 .content #gioco .container .gif-ctn {
   margin: 50px 0;
@@ -475,5 +424,47 @@ body {
 }
 .content #footer {
   width: 100vw;
-  height: 20vh;
+  background-color: #070918;
+}
+.content #footer .icon-bar {
+  margin: 0 auto;
+  width: 25vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  background-color: none;
+}
+.content #footer .icon-bar .icstyle {
+  display: flex;
+  flex: 1;
+  text-decoration: none;
+  color: #ffffff;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.content #footer .icon-bar .facebook:hover {
+  color: #3B5998;
+}
+.content #footer .icon-bar .instagram:hover {
+  color: #E1306C;
+}
+.content #footer .icon-bar .youtube:hover {
+  color: #bb0000;
+}
+.content #footer .icon-bar .twitch:hover {
+  color: #6441A4;
+}
+.content #footer .credits {
+  border-top: 1px solid #ffffff;
+  margin: 13vh auto 0;
+  width: 45vw;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+}
+.content #footer .credits span {
+  display: block;
+  padding: 28px;
 }

@@ -14,14 +14,6 @@
 </head>
 <body>
     <main id="scroll" class="content">
-        
-        <div class="icon-bar">
-            <a href="https://www.facebook.com/samuele.giaccone" class="icstyle facebook" target="_blank"><i class="fab fa-facebook-f"></i></a> 
-            <a href="https://twitter.com/samu_lalalalal" class="icstyle twitter" target="_blank"><i class="fab fa-twitter"></i></a> 
-            <a href="https://www.instagram.com/samuele.giaccone/" class="icstyle instagram" target="_blank"><i class="fab fa-instagram"></i></a> 
-            <a href="#" class="icstyle youtube"><i class="fab fa-youtube"></i></a> 
-        </div>
-
         <div class="back-up">
             <a href="#s1" class="icstyle arrow"><i class="fas fa-angle-up"></i></a>
         </div>
@@ -56,7 +48,7 @@
         <section id="chiSiamo">
             <div class="spacing">
                 <div class="text">
-                    <h1 class="titleSect text-center">Chi siamo</h1>
+                    <h1 class="titleSect text-center"><div class="rectangle"></div>Chi siamo</h1>
                     <p class="paragraph">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum magni atque cumque illum quidem ipsum, tenetur excepturi vel, recusandae nihil, dolores nisi autem distinctio nemo laudantium a reiciendis eius sed!
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum magni atque cumque illum quidem ipsum, tenetur excepturi vel, recusandae nihil, dolores nisi autem distinctio nemo laudantium a reiciendis eius sed!
@@ -146,7 +138,8 @@
                         <div class="el l">
                             <div class="hinner-container">
                                 <span class="argument">Meccaniche di gioco</span>
-                                <button id="btn1" class="fake-btn"><span class="plus">+</span></button>
+                                <button id="btn1" class="fake-btn"><span class="sign">+</span></button>
+                                <button id="btn1x" class="fake-btn hidden"><span class="sign">-</span></button>
                             </div>
                             <div id="ctn1" class="cont-arg closed">
                                 <p class="hinner-paragraph">
@@ -158,7 +151,8 @@
                         <div class="el r">
                             <div class="hinner-container">
                                 <span class="argument">Sviluppo della grafica</span>
-                                <button id="btn2" class="fake-btn"><span class="plus">+</span></button>
+                                <button id="btn2" class="fake-btn"><span class="sign">+</span></button>
+                                <button id="btn2x" class="fake-btn hidden"><span class="sign">-</span></button>
                             </div>
                             <div id="ctn2" class="cont-arg closed">
                                 <p class="hinner-paragraph">
@@ -179,13 +173,26 @@
                 </div>
             </div>
         </section>
-        <section id="footer"></div>
+        <section id="footer">
+            <div class="spacing short">
+                <div class="icon-bar">
+                    <a href="https://www.facebook.com/placeholder.softwaregame" class="icstyle facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/placeholder.software/" class="icstyle instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UC0_OM7p0vfjCVyzX0eylAKg?view_as=subscriber" target="_blank" class="icstyle youtube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="icstyle twitch" target="_blank"><i class="fab fa-twitch"></i></a> 
+                </div>
+
+                <div class="credits">
+                    <span class="textCredit">Placeholder&copy;2020</span>
+                </div>
+            </div>
+        </section>
     </main>
 
     <aside></aside>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
     <script src="dist/simplebar.js"></script>
     <script src="js/main.js"></script>
 </body>
