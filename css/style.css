@@ -38,6 +38,12 @@ body {
   height: 100vh;
   margin: 0 auto;
 }
+.spacing .text {
+  height: 53vh;
+  float: left;
+  flex-direction: row;
+  flex: 1;
+}
 .short {
   height: 25vh !important;
 }
@@ -73,7 +79,7 @@ body {
   letter-spacing: 0.1em;
   font-weight: normal;
   display: block;
-  padding: 5vh 0 3vh 0;
+  padding: 4vh 0 3vh 0;
 }
 .dark {
   color: #515151 !important;
@@ -81,21 +87,11 @@ body {
 .text-center {
   text-align: center;
 }
-.spacing {
-  width: 85vw;
-  margin: 0 auto;
-}
-.spacing .text {
-  height: 53vh;
-  float: left;
-  flex-direction: row;
-  flex: 1;
-}
 .paragraph {
   letter-spacing: 0.1em;
   color: #ffffff;
   line-height: 1.8;
-  font-size: 1em;
+  font-size: 17px;
   font-weight: 200;
 }
 .stretch {
@@ -299,6 +295,92 @@ body {
   background-color: #cfcfcf;
   width: 100vw;
   height: 100vh;
+}
+.content #progetto .slideshow {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+.content #progetto .slideshow .clm-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.content #progetto .slideshow .clm-left .row {
+  display: flex;
+  flex: 1;
+}
+.content #progetto .slideshow .clm-left .row .col-md-5 {
+  margin-left: 7vw;
+}
+.content #progetto .slideshow .clm-left .row .col-md-5 .titleSlideshow {
+  color: #434343;
+  font-size: 3em;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  padding: 4vh 0 3vh 0;
+}
+.content #progetto .slideshow .clm-left .row .col-md-5 p {
+  padding: 0px 20px 0px 50px;
+}
+.content #progetto .slideshow .clm-left .row .col-md-5 .text-slides-container h3 {
+  padding: 0px 20px 0px 50px;
+  font-size: 1.5em;
+  color: #434343;
+  letter-spacing: 0.1em;
+  font-weight: normal;
+}
+.content #progetto .slideshow .clm-left .row .col-md-5 .text-slides-container .slide {
+  margin-top: 20px;
+}
+.content #progetto .slideshow .clm-left .row .col-md-5 .text-slides-container .slide .subtitle {
+  float: right;
+  margin-top: 20px;
+  color: #515151;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
+}
+.content #progetto .slideshow .clm-left .end {
+  align-items: flex-end;
+}
+.content #progetto .slideshow .clm-left .center {
+  align-items: center;
+}
+.content #progetto .slideshow .clm-left .slider-controls {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  margin-right: 60px;
+}
+.content #progetto .slideshow .clm-left .slider-controls .controls .changeSlide {
+  text-decoration: none;
+}
+.content #progetto .slideshow .clm-left .slider-controls .controls .changeSlide i {
+  font-size: 22px;
+  color: #434343;
+  padding: 0 5px;
+}
+.content #progetto .slideshow .clm-left .slider-controls .controls .active i {
+  color: #ae76d7;
+}
+.content #progetto .slideshow .clm-right {
+  display: flex;
+  flex: 1;
+}
+.content #progetto .slideshow .clm-right .col-md-7 {
+  display: flex;
+  flex: 1;
+}
+.content #progetto .slideshow .clm-right .col-md-7 .slide1 {
+  width: 60vw;
+  background: url("../assets/images/slides/Asana1.PNG") no-repeat center center;
+  background-size: cover;
+}
+.content #progetto .slideshow .clm-right .col-md-7 .slide1 .logo {
+  width: 90px;
+  height: auto;
 }
 .content #divario {
   background-color: #ffffff;

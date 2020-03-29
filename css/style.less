@@ -43,6 +43,13 @@ body {
     width: @contentWidth;
     height: @fullHeight;
     margin: 0 auto;
+
+    .text {
+        height: 53vh;
+        float: left;
+        flex-direction: row;
+        flex: 1;
+    }
 }
 
 .short {
@@ -88,7 +95,7 @@ body {
     letter-spacing: 0.1em;
     font-weight: normal;
     display: block;
-    padding: 5vh 0 3vh 0;
+    padding: 4vh 0 3vh 0;
 }
 
 .dark {
@@ -99,23 +106,11 @@ body {
     text-align: center;
 }
 
-.spacing {
-    width: @contentWidth;
-    margin: 0 auto;
-
-    .text {
-        height: 53vh;
-        float: left;
-        flex-direction: row;
-        flex: 1;
-    }
-}
-
 .paragraph {
     letter-spacing: 0.1em;
     color: @primary;
     line-height: 1.8;
-    font-size: 1em; //18px
+    font-size: 17px; //1em
     font-weight: 200;
 }
 
@@ -353,7 +348,118 @@ body {
     #progetto {
         background-color: @greyBg;
         width: @fullWidth;
-        height: @fullHeight;    
+        height: @fullHeight;
+
+        .slideshow {
+            display: flex;
+            flex-direction: row;
+            width: @fullWidth;
+            height: @fullHeight;
+
+            .clm-left {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+
+                .row {
+                    display: flex;
+                    flex: 1;
+
+                    .col-md-5 {
+                        margin-left: 7vw;
+                    
+                        .titleSlideshow {
+                            color: #434343;
+                            font-size: 3em;
+                            font-weight: normal;
+                            letter-spacing: 0.1em;
+                            padding: 4vh 0 3vh 0;
+                        }
+
+                        p {
+                            padding: 0px 20px 0px 50px;
+                        }
+
+                        .text-slides-container {
+
+                            h3 {
+                                padding: 0px 20px 0px 50px;
+                                font-size: 1.5em;
+                                color: #434343;
+                                letter-spacing: 0.1em;
+                                font-weight: normal;
+                            }
+
+                            .slide {
+                                margin-top: 20px;
+
+                                .subtitle {
+                                    float: right;
+                                    margin-top: 20px;
+                                    color: @fontGrey;
+                                    font-weight: 100;
+                                    letter-spacing: 0.1em;
+                                    font-size: 0.8em;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .end {
+                    align-items: flex-end;
+                }
+
+                .center {
+                    align-items: center;
+                }
+
+                .slider-controls {
+                    display: flex;
+                    flex: 1;
+                    justify-content: flex-end;
+                    margin-right: 60px;
+
+                    .controls {
+                        .changeSlide {
+                            text-decoration: none;
+                            i {
+                                font-size: 22px;
+                                color: #434343;
+                                padding: 0 5px;
+                            }
+                        }
+
+                        .active {
+                            i {
+                                color: @tertiary;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .clm-right {
+                display: flex;
+                flex: 1;
+
+                .col-md-7 {
+                    display: flex;
+                    flex: 1;
+
+                    .slide1 {
+                        width: 60vw;
+                        background: url("../assets/images/slides/Asana1.PNG") no-repeat center center;
+                        background-size: cover;
+
+                        .logo {
+                            width: 90px;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     #divario {
