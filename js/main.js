@@ -105,24 +105,4 @@ function carousel2() {
     x[slideIndex2-1].style.display = 'block'; 
     setTimeout(carousel2, 4000); 
 }
-// ############### CAROUSEL ####################
-let slideIndex3 = 0;
-carousel3();
-
-function carousel3() {
-    let i;
-    let x = document.getElementsByClassName('changeSlide');
-
-    for (i=0; i < x.length; i++) {
-        x[i].classList.contains('no-active');
-    }
-        
-        slideIndex3++;
-    
-    if (slidex3 > x.length) {
-        slideIndex3 = 1;
-    }
-
-    x[slideIndex3-1].classList.replace('active');
-    setTimeout(carousel3, 4000);
-} 
+// ############### CAROUSEL #################### 
