@@ -100,6 +100,13 @@ body {
 .longPage {
   height: 120vh !important;
 }
+.mid-large {
+  width: 450px;
+  height: auto;
+}
+.white {
+  color: #ffffff;
+}
 /* ###################################### */
 .content {
   width: 100vw;
@@ -324,6 +331,10 @@ body {
 .content #progetto .slideshow .clm-left .row .col-md-5 p {
   padding: 0px 20px 0px 50px;
 }
+.content #progetto .slideshow .clm-left .row .col-md-5 .text-slides-container {
+  width: auto;
+  height: 200px;
+}
 .content #progetto .slideshow .clm-left .row .col-md-5 .text-slides-container h3 {
   padding: 0px 20px 0px 50px;
   font-size: 1.5em;
@@ -333,20 +344,16 @@ body {
 }
 .content #progetto .slideshow .clm-left .row .col-md-5 .text-slides-container .slide {
   margin-top: 20px;
-}
-.content #progetto .slideshow .clm-left .row .col-md-5 .text-slides-container .slide .subtitle {
-  float: right;
-  margin-top: 20px;
-  color: #515151;
-  font-weight: 100;
-  letter-spacing: 0.1em;
-  font-size: 0.8em;
+  display: none;
 }
 .content #progetto .slideshow .clm-left .end {
   align-items: flex-end;
 }
 .content #progetto .slideshow .clm-left .center {
   align-items: center;
+}
+.content #progetto .slideshow .clm-left .start {
+  align-items: flex-start;
 }
 .content #progetto .slideshow .clm-left .slider-controls {
   display: flex;
@@ -373,14 +380,54 @@ body {
   display: flex;
   flex: 1;
 }
-.content #progetto .slideshow .clm-right .col-md-7 .slide1 {
+.content #progetto .slideshow .clm-right .col-md-7 .slide-image {
   width: 60vw;
-  background: url("../assets/images/slides/Asana1.PNG") no-repeat center center;
+  display: none;
+}
+.content #progetto .slideshow .clm-right .col-md-7 .slide-image .btnLogo {
+  margin: 15px;
+}
+.content #progetto .slideshow .clm-right .col-md-7 .slide-image .btnLogo .logo {
+  width: 75px;
+  height: auto;
+  margin-top: 10px;
+}
+.content #progetto .slideshow .clm-right .col-md-7 .slide-image #expandBtn {
+  float: right;
+  width: 45px;
+  height: auto;
+  background: none;
+  border: none;
+  margin: 20px;
+  outline: none;
+  cursor: pointer;
+}
+.content #progetto .slideshow .clm-right .col-md-7 .slide-image #expandBtn .expand {
+  font-size: 30px;
+}
+.content #progetto .slideshow .clm-right .col-md-7 #slide1 {
+  background: url("../assets/images/slides/Asana1.PNG") no-repeat;
   background-size: cover;
 }
-.content #progetto .slideshow .clm-right .col-md-7 .slide1 .logo {
-  width: 90px;
-  height: auto;
+.content #progetto .slideshow .clm-right .col-md-7 #slide2 {
+  background: url("../assets/images/slides/Asana2.PNG") no-repeat;
+  background-size: cover;
+}
+.content #progetto .slideshow .clm-right .col-md-7 #slide3 {
+  background: url("../assets/images/slides/Asana3.PNG") no-repeat;
+  background-size: cover;
+}
+.content #progetto .slideshow .clm-right .col-md-7 #slide4 {
+  background: url("../assets/images/slides/Discord.jpg") no-repeat;
+  background-size: cover;
+}
+.content #progetto .slideshow .clm-right .col-md-7 #slide5 {
+  background: url("../assets/images/slides/Gamemaker.PNG") no-repeat;
+  background-size: cover;
+}
+.content #progetto .slideshow .clm-right .col-md-7 #slide6 {
+  background: url("../assets/images/slides/Git.PNG") no-repeat;
+  background-size: cover;
 }
 .content #divario {
   background-color: #ffffff;
@@ -429,7 +476,7 @@ body {
 }
 .content #gioco .box {
   width: 85vw;
-  height: calc(100vh / 3 -50px);
+  height: calc(100vh / 3);
   background-color: #472047;
   border: 10px #290929 solid;
 }
@@ -461,7 +508,7 @@ body {
 }
 .content #gioco .container .ctn-el .el .hinner-container span {
   padding: 17px 15px;
-  width: 300px;
+  width: 572px;
 }
 .content #gioco .container .ctn-el .el .hinner-container .argument {
   display: flex;
@@ -472,11 +519,13 @@ body {
   border: none;
   color: #ffffff;
   outline: none;
+  width: auto;
 }
 .content #gioco .container .ctn-el .el .hinner-container .fake-btn .sign {
   display: flex;
   justify-content: flex-end;
   font-size: 21px;
+  width: 10px;
 }
 .content #gioco .container .ctn-el .el .cont-arg {
   display: flex;

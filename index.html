@@ -8,7 +8,7 @@
     <link rel="icon" href="assets/ico/faviconPlaceholderBlack.ico" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/simplebar.css"/>
+    <!-- <link rel="stylesheet" href="css/simplebar.css"/> -->
     <script src="https://kit.fontawesome.com/5d00fb20cf.js" crossorigin="anonymous"></script>
     <title>Placeholder</title>
 </head>
@@ -113,30 +113,34 @@
                                 <div class="text-slides-container">
                                     <h3>Software utilizzati:</h3>
                                     <div class="slide">
-                                        <p class="paragraph dark">
+                                        <p class="paragraph mid-large dark">
                                             Testo descrizione Asana prima slide
                                         </p>
-                                        <span class="subtitle">Asana</span>
+                                        
                                     </div>
                                     <div class="slide">
-                                        <p>
-    
+                                        <p class="paragraph mid-large dark">
+                                            Testo descrizione Asana seconda slide
                                         </p>
+                                       
                                     </div>
                                     <div class="slide">
-                                        <p>
-    
+                                        <p class="paragraph mid-large dark">
+                                            Testo descrizione Asana terza slide
                                         </p>
+                                        
                                     </div>
                                     <div class="slide">
-                                        <p>
-    
+                                        <p class="paragraph mid-large dark">
+                                            Testo descrizione Gamemaker quarta slide
                                         </p>
+                                       
                                     </div>
                                     <div class="slide">
-                                        <p>
-    
+                                        <p class="paragraph mid-large dark">
+                                            Testo descrizione Git quinta slide
                                         </p>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -146,16 +150,16 @@
                                 <a class="changeSlide active" href="#" data-slideid="1">
                                     <i class="fa fa-circle"></i>
                                 </a>
-                                <a class="changeSlide" href="#" data-slideid="2">
+                                <a class="changeSlide no-active" href="#" data-slideid="2">
                                     <i class="fa fa-circle"></i>
                                 </a>
-                                <a class="changeSlide" href="#" data-slideid="3">
+                                <a class="changeSlide no-active" href="#" data-slideid="3">
                                     <i class="fa fa-circle"></i>
                                 </a>
-                                <a class="changeSlide" href="#" data-slideid="4">
+                                <a class="changeSlide no-active" href="#" data-slideid="4">
                                     <i class="fa fa-circle"></i>
                                 </a>
-                                <a class="changeSlide" href="#" data-slideid="5">
+                                <a class="changeSlide no-active" href="#" data-slideid="5">
                                     <i class="fa fa-circle"></i>
                                 </a>
                             </div>
@@ -163,17 +167,33 @@
                     </div>
                     <div class="clm-right">
                         <div class="col-md-7">
-                            <div class="slide-image slide1">
-                                <a class="btnLogo" href="https://asana.com/" target="_blankg"><image class="logo" src="assets/images/logo/asana-logo.png"></image></a>
+                            <div id="slide1" class="slide-image">
+                                <a class="btnLogo" href="https://asana.com/" target="_blank"><image class="logo" src="assets/images/logo/asana-logo.png"></image></a>
+                                <button id="expandBtn"><i class="fa fa-expand-alt expand"></i></button>
                             </div>
-                            <div class="slide-image slide"></div>
-                            <div class="slide-image slide"></div>
-                            <div class="slide-image slide"></div>
-                            <div class="slide-image slide"></div>
+                            <div id="slide2" class="slide-image">
+                                <a class="btnLogo" href="https://asana.com/" target="_blank"><image class="logo" src="assets/images/logo/asana-logo.png"></image></a>
+                                <button id="expandBtn"><i class="fa fa-expand-alt expand"></i></button>
+                            </div>
+                            <div id="slide3" class="slide-image">
+                                <a class="btnLogo" href="https://asana.com/" target="_blank"><image class="logo" src="assets/images/logo/asana-logo.png"></image></a>
+                                <button id="expandBtn"><i class="fa fa-expand-alt expand"></i></button>
+                            </div>
+                            <div id="slide4" class="slide-image">
+                                <a class="btnLogo" href="https://discordapp.com/" target="_blank"><image class="logo" src="assets/images/logo/discord-logo.png"></image></a>
+                                <button id="expandBtn"><i class="fa fa-expand-alt expand white"></i></button>
+                            </div>
+                            <div id="slide5" class="slide-image">
+                                <a class="btnLogo" href="https://www.yoyogames.com/get" target="_blank"><image class="logo" src="assets/images/logo/gamemaker-logo-white.png"></image></a>
+                                <button id="expandBtn"><i class="fa fa-expand-alt expand white"></i></button>
+                            </div>
+                            <div id="slide6" class="slide-image">
+                                <a class="btnLogo" href="https://git-scm.com/" target="_blank"><image class="logo" src="assets/images/logo/git-logo.png"></image></a>
+                                <button id="expandBtn"><i class="fa fa-expand-alt expand white"></i></button>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             
         </section>
         <section id="divario">
@@ -267,7 +287,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
-    <script src="dist/simplebar.js"></script>
+    <!-- <script src="dist/simplebar.js"></script> -->
     <script src="js/main.js"></script>
 </body>
 </html>

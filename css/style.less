@@ -122,6 +122,15 @@ body {
     height: 120vh !important;
 }
 
+.mid-large {
+    width: 450px;
+    height: auto;
+}
+
+.white {
+    color: @primary;
+}
+
 /* ###################################### */
 
 .content {
@@ -381,6 +390,8 @@ body {
                         }
 
                         .text-slides-container {
+                            width: auto;
+                            height: 200px;
 
                             h3 {
                                 padding: 0px 20px 0px 50px;
@@ -392,15 +403,17 @@ body {
 
                             .slide {
                                 margin-top: 20px;
+                                display: none;
 
-                                .subtitle {
-                                    float: right;
-                                    margin-top: 20px;
-                                    color: @fontGrey;
-                                    font-weight: 100;
-                                    letter-spacing: 0.1em;
-                                    font-size: 0.8em;
-                                }
+                                // .subtitle {
+                                //     float: right;
+                                //     margin-top: 30px;
+                                //     color: @fontGrey;
+                                //     font-weight: 100;
+                                //     letter-spacing: 0.1em;
+                                //     font-size: 0.8em;
+                                //     width: 20px;
+                                // }
                             }
                         }
                     }
@@ -414,6 +427,10 @@ body {
                     align-items: center;
                 }
 
+                .start {
+                    align-items: flex-start;
+                }
+
                 .slider-controls {
                     display: flex;
                     flex: 1;
@@ -423,6 +440,7 @@ body {
                     .controls {
                         .changeSlide {
                             text-decoration: none;
+
                             i {
                                 font-size: 22px;
                                 color: #434343;
@@ -431,6 +449,7 @@ body {
                         }
 
                         .active {
+
                             i {
                                 color: @tertiary;
                             }
@@ -447,15 +466,64 @@ body {
                     display: flex;
                     flex: 1;
 
-                    .slide1 {
+                    .slide-image {
                         width: 60vw;
-                        background: url("../assets/images/slides/Asana1.PNG") no-repeat center center;
-                        background-size: cover;
+                        display: none;
 
-                        .logo {
-                            width: 90px;
-                            height: auto;
+                        .btnLogo {
+                            margin: 15px;
+
+                            .logo {
+                                width: 75px;
+                                height: auto;
+                                margin-top: 10px;
+                            }
                         }
+
+                        #expandBtn {
+                            float: right;
+                            width: 45px;
+                            height: auto;
+                            background: none;
+                            border: none;
+                            margin: 20px;
+                            outline: none;
+                            cursor: pointer;
+                            
+                            .expand {
+                                font-size: 30px;
+                            }
+                        }   
+                    }
+
+                    #slide1 {
+                        background: url("../assets/images/slides/Asana1.PNG") no-repeat ;
+                        background-size: cover;
+                    }
+
+                    #slide2 {
+                        background: url("../assets/images/slides/Asana2.PNG") no-repeat;
+                        background-size: cover;
+                    }
+
+                    #slide3 {
+                        background: url("../assets/images/slides/Asana3.PNG") no-repeat;
+                        background-size: cover;
+                    }
+
+                    #slide4 {
+                        background: url("../assets/images/slides/Discord.jpg") no-repeat;
+                        background-size: cover;
+                    }
+
+                    #slide5 {
+                        background: url("../assets/images/slides/Gamemaker.PNG") no-repeat;
+                        background-size: cover;
+                    }
+
+                    #slide6 {
+                        background: url("../assets/images/slides/Git.PNG") no-repeat;
+                        background-size: cover;
                     }
                 }
             }
@@ -515,7 +583,7 @@ body {
         
         .box {
             width: @contentWidth;
-            height: calc(@fullHeight / 3 -50px);
+            height: calc(@fullHeight / 3);
             background-color: #472047;
             border: 10px #290929 solid;
         }
@@ -548,7 +616,7 @@ body {
 
                         span {
                             padding: 17px 15px;
-                            width: 300px;
+                            width: 572px;
                         }
         
                         .argument {
@@ -561,11 +629,13 @@ body {
                             border: none;
                             color: @primary;
                             outline: none;
+                            width: auto;
 
                             .sign {
                                 display: flex;
                                 justify-content: flex-end;
                                 font-size: 21px;
+                                width: 10px;
                             }
                         } 
                     }
@@ -604,7 +674,6 @@ body {
                 }
             }
         }
-
     }
 
     #footer {
