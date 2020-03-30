@@ -492,9 +492,8 @@ body {
   flex-direction: row;
 }
 .content #gioco .container .ctn-el .el {
-  display: flex;
   width: auto;
-  flex-direction: column;
+  height: fit-content;
   color: #ffffff;
   border-top: 1px #ffffff solid;
   border-bottom: 1px #ffffff solid;
