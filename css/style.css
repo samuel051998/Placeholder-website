@@ -39,8 +39,9 @@ body {
   margin: 0 auto;
 }
 .spacing .text {
+  max-width: 80ch;
+  margin: auto;
   height: 53vh;
-  float: left;
   flex-direction: row;
   flex: 1;
 }
@@ -96,7 +97,7 @@ body {
 }
 .stretch {
   padding: 15px;
-  width: 80ch;
+  max-width: 80ch;
   margin: 50px auto;
 }
 .longPage {
@@ -131,6 +132,7 @@ body {
   transition: all 0.3s ease;
   font-size: 15px;
   line-height: 5px;
+  outline: none;
   color: #ffffff;
   background-color: #020202;
 }
@@ -210,6 +212,7 @@ body {
   transition: color 0.3s cubic-bezier(0.11, 0.7, 0, 1);
   flex: 1;
   text-align: center;
+  outline: none;
 }
 .content #s1 .navbar ul li a:hover {
   color: #ffffff;
@@ -437,7 +440,7 @@ body {
   height: 100vh;
 }
 .content #divario .spaceButton {
-  width: 85vw;
+  width: auto;
   height: 17.5vh;
   margin: 100px auto;
 }
@@ -477,7 +480,7 @@ body {
   height: 100vh;
 }
 .content #gioco .box {
-  width: 70vw;
+  width: 57vw;
   height: calc(100vh / 3);
   background-color: #472047;
   border: 10px #290929 solid;
@@ -488,7 +491,7 @@ body {
   height: auto;
   display: flex;
   flex-direction: column;
-  margin: 50px 0;
+  margin: 66px 0;
 }
 .content #gioco .container .ctn-el {
   display: flex;
@@ -576,6 +579,7 @@ body {
   color: #ffffff;
   justify-content: center;
   transition: all 0.3s ease;
+  outline: none;
 }
 .content #footer .icon-bar .facebook:hover {
   color: #3B5998;
