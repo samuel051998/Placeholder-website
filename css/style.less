@@ -89,7 +89,23 @@ body {
 }
 
 .demon:hover {
-    color: #4ca972;
+    color: #316e4b;
+}
+
+.asana {
+    color: #f95e8c;
+}
+
+.discord {
+    color: #8c9eff;
+}
+
+.gamemaker {
+    color: #8cd248;
+}
+
+.git {
+    color: #f05033;
 }
 
 .titleSect {
@@ -354,10 +370,6 @@ body {
                     }
                 }
             }
-
-            .list-a {
-                margin-right: 3vw;
-            } 
         }
     }
 
@@ -398,7 +410,7 @@ body {
 
                         .text-slides-container {
                             width: auto;
-                            height: 200px;
+                            height: auto;
 
                             h3 {
                                 padding: 0px 20px 0px 50px;
@@ -411,6 +423,17 @@ body {
                             .slide {
                                 margin-top: 20px;
                                 display: none;
+
+                                .title-software {
+                                    padding: 0px 20px 0px 50px;
+                                    font-size: 1.3em;
+                                    letter-spacing: 0.2em;
+                                    font-weight: 600;
+                                }
+
+                                p {
+                                    padding-top: 30px;
+                                }
                             }
                         }
                     }
@@ -426,33 +449,6 @@ body {
 
                 .start {
                     align-items: flex-start;
-                }
-
-                .slider-controls {
-                    display: flex;
-                    flex: 1;
-                    justify-content: flex-end;
-                    margin-right: 60px;
-
-                    .controls {
-
-                        .changeSlide {
-                            text-decoration: none;
-
-                            i {
-                                font-size: 22px;
-                                color: #434343;
-                                padding: 0 5px;
-                            }
-                        }
-
-                        .active {
-
-                            i {
-                                color: @tertiary;
-                            }
-                        }
-                    }
                 }
             }
 
@@ -515,12 +511,12 @@ body {
                     }
 
                     #slide5 {
-                        background: url("../assets/images/slides/Gamemaker.PNG") no-repeat;
+                        background: url("../assets/images/slides/Gamemaker.png") no-repeat;
                         background-size: cover;
                     }
 
                     #slide6 {
-                        background: url("../assets/images/slides/Git.PNG") no-repeat;
+                        background: url("../assets/images/slides/Git.png") no-repeat;
                         background-size: cover;
                     }
 

@@ -74,7 +74,19 @@ body {
   color: #e6323e;
 }
 .demon:hover {
-  color: #4ca972;
+  color: #316e4b;
+}
+.asana {
+  color: #f95e8c;
+}
+.discord {
+  color: #8c9eff;
+}
+.gamemaker {
+  color: #8cd248;
+}
+.git {
+  color: #f05033;
 }
 .titleSect {
   color: #ffffff;
@@ -302,9 +314,6 @@ body {
   color: #b1b1b1;
   font-size: 12px;
 }
-.content #chiSiamo .team .list-a {
-  margin-right: 3vw;
-}
 .content #progetto {
   background-color: #cfcfcf;
   width: 100vw;
@@ -340,7 +349,7 @@ body {
 }
 .content #progetto .slideshow .clm-left .row .col-md-5 .text-slides-container {
   width: auto;
-  height: 200px;
+  height: auto;
 }
 .content #progetto .slideshow .clm-left .row .col-md-5 .text-slides-container h3 {
   padding: 0px 20px 0px 50px;
@@ -353,6 +362,15 @@ body {
   margin-top: 20px;
   display: none;
 }
+.content #progetto .slideshow .clm-left .row .col-md-5 .text-slides-container .slide .title-software {
+  padding: 0px 20px 0px 50px;
+  font-size: 1.3em;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+}
+.content #progetto .slideshow .clm-left .row .col-md-5 .text-slides-container .slide p {
+  padding-top: 30px;
+}
 .content #progetto .slideshow .clm-left .end {
   align-items: flex-end;
 }
@@ -361,23 +379,6 @@ body {
 }
 .content #progetto .slideshow .clm-left .start {
   align-items: flex-start;
-}
-.content #progetto .slideshow .clm-left .slider-controls {
-  display: flex;
-  flex: 1;
-  justify-content: flex-end;
-  margin-right: 60px;
-}
-.content #progetto .slideshow .clm-left .slider-controls .controls .changeSlide {
-  text-decoration: none;
-}
-.content #progetto .slideshow .clm-left .slider-controls .controls .changeSlide i {
-  font-size: 22px;
-  color: #434343;
-  padding: 0 5px;
-}
-.content #progetto .slideshow .clm-left .slider-controls .controls .active i {
-  color: #ae76d7;
 }
 .content #progetto .slideshow .clm-right {
   display: flex;
@@ -429,11 +430,11 @@ body {
   background-size: cover;
 }
 .content #progetto .slideshow .clm-right .col-md-7 #slide5 {
-  background: url("../assets/images/slides/Gamemaker.PNG") no-repeat;
+  background: url("../assets/images/slides/Gamemaker.png") no-repeat;
   background-size: cover;
 }
 .content #progetto .slideshow .clm-right .col-md-7 #slide6 {
-  background: url("../assets/images/slides/Git.PNG") no-repeat;
+  background: url("../assets/images/slides/Git.png") no-repeat;
   background-size: cover;
 }
 .content #progetto .slideshow .clm-right .col-md-7 .fullscreen {
