@@ -299,6 +299,7 @@ body {
 .content #chiSiamo .team .list .element .role {
   font-weight: lighter;
   color: #b1b1b1;
+  font-size: 12px;
 }
 .content #chiSiamo .team .list-a {
   margin-right: 3vw;
@@ -442,7 +443,7 @@ body {
 .content #divario .spaceButton {
   width: auto;
   height: 17.5vh;
-  margin: 100px auto;
+  margin: 54px auto;
 }
 .content #divario .spaceButton .cit {
   text-align: center;
