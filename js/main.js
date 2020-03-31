@@ -79,7 +79,7 @@ function carousel() {
     let x = document.getElementsByClassName('slide');
 
     for (i = 0; i < x.length; i++) {
-        x[i].style.display = 'none'; 
+        x[i].style.display = 'none';
     }
 
     slideIndex++;
@@ -88,7 +88,7 @@ function carousel() {
     } 
 
     x[slideIndex-1].style.display = 'block';
-    setTimeout(carousel, 4000); 
+    setTimeout(carousel, 10000); 
 }
 
 let slideIndex2 = 0;
@@ -97,12 +97,65 @@ carousel2();
 function carousel2() {
     let i;
     let x = document.getElementsByClassName('slide-image');
+
     for (i = 0; i < x.length; i++) {
-    x[i].style.display = 'none'; 
+        x[i].style.display = 'none'; 
     }
+
     slideIndex2++;
-    if (slideIndex2 > x.length) {slideIndex2 = 1;} 
+
+    if (slideIndex2 > x.length) {
+        slideIndex2 = 1;
+    } 
+   
     x[slideIndex2-1].style.display = 'block'; 
-    setTimeout(carousel2, 4000); 
+    setTimeout(carousel2, 10000); 
 }
-// ############### CAROUSEL #################### 
+// ############### CAROUSEL ####################
+
+// ############### BTN FULL SCREEN ###############
+$(document).ready(function(){
+    $("#expand1").click(function(e) {
+        $("#slide1").toggleClass("fullscreen");
+        $("#slide1").toggleClass("fadeIn animated");
+        $(".fa").toggleClass("fa-times");
+        $(".btnLogo").toggleClass("hidden");
+    });
+
+    $("#expand2").click(function(e) {
+        $("#slide2").toggleClass("fullscreen");
+        $("#slide2").toggleClass("fadeIn animated");
+        $(".fa").toggleClass("fa-times");
+        $(".btnLogo").toggleClass("hidden");
+    });
+
+    $("#expand3").click(function(e) {
+        $("#slide3").toggleClass("fullscreen");
+        $("#slide3").toggleClass("fadeIn animated");
+        $(".fa").toggleClass("fa-times");
+        $(".btnLogo").toggleClass("hidden");
+    });
+
+    $("#expand4").click(function(e) {
+        $("#slide4").toggleClass("fullscreen");
+        $("#slide4").toggleClass("fadeIn animated");
+        $(".fa").toggleClass("fa-times");
+        $(".btnLogo").toggleClass("hidden");
+    });
+
+    $("#expand5").click(function(e) {
+        $("#slide5").toggleClass("fullscreen");
+        $("#slide5").toggleClass("fadeIn animated");
+        $(".fa").toggleClass("fa-times");
+        $(".btnLogo").toggleClass("hidden");
+    });
+
+    $("#expand6").click(function(e) {
+        $("#slide6").toggleClass("fullscreen");
+        $("#slide6").toggleClass("fadeIn animated");
+        $(".fa").toggleClass("fa-times");
+        $(".btnLogo").toggleClass("hidden");
+    });
+
+});
+// ############### BTN FULL SCREEN ###############

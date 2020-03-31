@@ -14,6 +14,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -47,7 +48,7 @@ body {
     .text {
         max-width: 80ch;
         margin: auto;
-        height: 53vh;
+        height: 33vh;
         flex-direction: row;
         flex: 1;
     }
@@ -55,6 +56,7 @@ body {
 
 .short {
     height: 25vh !important;
+    margin-top: 100px;
 }
 
 .two-thirds {
@@ -139,7 +141,6 @@ body {
 .content {
     width: @fullWidth;
     height: auto;
-    background-color: @secondary;
 
     .back-up {
         position: fixed;
@@ -410,16 +411,6 @@ body {
                             .slide {
                                 margin-top: 20px;
                                 display: none;
-
-                                // .subtitle {
-                                //     float: right;
-                                //     margin-top: 30px;
-                                //     color: @fontGrey;
-                                //     font-weight: 100;
-                                //     letter-spacing: 0.1em;
-                                //     font-size: 0.8em;
-                                //     width: 20px;
-                                // }
                             }
                         }
                     }
@@ -487,7 +478,7 @@ body {
                             }
                         }
 
-                        #expandBtn {
+                        .expandBtn {
                             float: right;
                             width: 45px;
                             height: auto;
@@ -532,6 +523,17 @@ body {
                         background: url("../assets/images/slides/Git.PNG") no-repeat;
                         background-size: cover;
                     }
+
+                    .fullscreen {
+                        left: 0;
+                        top: 0;
+                        width: 100vw;
+                        height: 100vh;
+                        position: fixed;
+                        box-sizing: border-box;
+                        padding: 20px;
+                    }
+                    
                 }
             }
         }
@@ -615,6 +617,7 @@ body {
                     border-bottom: 1px @primary solid;
                     font-size: 21px;
                     font-weight: 500;
+                    transition: all 0.5s;
 
                     .hinner-container {
                         display: flex;
@@ -695,7 +698,6 @@ body {
             justify-content: center;
             align-items: center;
             font-size: 50px;
-            background-color: none;
 
             .icstyle {
                 display: flex;

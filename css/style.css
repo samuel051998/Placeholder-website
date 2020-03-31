@@ -15,6 +15,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   overflow-x: hidden;
@@ -41,12 +42,13 @@ body {
 .spacing .text {
   max-width: 80ch;
   margin: auto;
-  height: 53vh;
+  height: 33vh;
   flex-direction: row;
   flex: 1;
 }
 .short {
   height: 25vh !important;
+  margin-top: 100px;
 }
 .two-thirds {
   height: calc(100vh * 2 / 3);
@@ -114,7 +116,6 @@ body {
 .content {
   width: 100vw;
   height: auto;
-  background-color: #020202;
 }
 .content .back-up {
   position: fixed;
@@ -398,7 +399,7 @@ body {
   height: auto;
   margin-top: 10px;
 }
-.content #progetto .slideshow .clm-right .col-md-7 .slide-image #expandBtn {
+.content #progetto .slideshow .clm-right .col-md-7 .slide-image .expandBtn {
   float: right;
   width: 45px;
   height: auto;
@@ -408,7 +409,7 @@ body {
   outline: none;
   cursor: pointer;
 }
-.content #progetto .slideshow .clm-right .col-md-7 .slide-image #expandBtn .expand {
+.content #progetto .slideshow .clm-right .col-md-7 .slide-image .expandBtn .expand {
   font-size: 30px;
 }
 .content #progetto .slideshow .clm-right .col-md-7 #slide1 {
@@ -434,6 +435,15 @@ body {
 .content #progetto .slideshow .clm-right .col-md-7 #slide6 {
   background: url("../assets/images/slides/Git.PNG") no-repeat;
   background-size: cover;
+}
+.content #progetto .slideshow .clm-right .col-md-7 .fullscreen {
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  box-sizing: border-box;
+  padding: 20px;
 }
 .content #divario {
   background-color: #ffffff;
@@ -506,6 +516,7 @@ body {
   border-bottom: 1px #ffffff solid;
   font-size: 21px;
   font-weight: 500;
+  transition: all 0.5s;
 }
 .content #gioco .container .ctn-el .el .hinner-container {
   display: flex;
@@ -571,7 +582,6 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 50px;
-  background-color: none;
 }
 .content #footer .icon-bar .icstyle {
   display: flex;

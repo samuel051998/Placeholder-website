@@ -9,11 +9,12 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="css/simplebar.css"/> -->
+    <link rel="stylesheet" href="css/animate.css">
     <script src="https://kit.fontawesome.com/5d00fb20cf.js" crossorigin="anonymous"></script>
     <title>Placeholder</title>
 </head>
 <body>
-    <main id="scroll" class="content">
+    <main class="content">
         <div class="back-up">
             <a href="#s1" class="icstyle arrow"><i class="fas fa-angle-up"></i></a>
         </div>
@@ -31,10 +32,10 @@
                     </div>
                     <hr>
                     <ul>
-                        <li><a href="#chiSiamo" class="linkEffect">Chi siamo</a></li>
-                        <li><a href="#progetto" class="linkEffect">Progetto</a></li>
-                        <li><a href="#divario" class="linkEffect">Divario 13</a></li>
-                        <li><a href="#gioco" class="linkEffect">Gioco</a></li>
+                        <li><a id="link1" href="#chiSiamo" class="linkEffect">Chi siamo</a></li>
+                        <li><a id="link1" href="#progetto" class="linkEffect">Progetto</a></li>
+                        <li><a id="link1" href="#divario" class="linkEffect">Divario 13</a></li>
+                        <li><a id="link1" href="#gioco" class="linkEffect">Gioco</a></li>
                     </ul>
                 </div>
                 <div class="contents1">
@@ -111,7 +112,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="row end">
+                        <div class="row start">
                             <div class="col-md-5">
                                 <div class="text-slides-container">
                                     <h3>Software utilizzati:</h3>
@@ -119,80 +120,83 @@
                                         <p class="paragraph mid-large dark">
                                             Testo descrizione Asana prima slide
                                         </p>
-                                        
                                     </div>
                                     <div class="slide">
                                         <p class="paragraph mid-large dark">
                                             Testo descrizione Asana seconda slide
                                         </p>
-                                       
                                     </div>
                                     <div class="slide">
                                         <p class="paragraph mid-large dark">
                                             Testo descrizione Asana terza slide
                                         </p>
-                                        
                                     </div>
                                     <div class="slide">
                                         <p class="paragraph mid-large dark">
-                                            Testo descrizione Gamemaker quarta slide
+                                            Testo descrizione Discord quarta slide
                                         </p>
-                                       
                                     </div>
                                     <div class="slide">
                                         <p class="paragraph mid-large dark">
-                                            Testo descrizione Git quinta slide
+                                            Testo descrizione Gamemaker quinta slide
                                         </p>
-                                        
+                                    </div>
+                                    <div class="slide">
+                                        <p class="paragraph mid-large dark">
+                                            Testo descrizione Git sesta slide
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="slider-controls center">
+                        <!-- <div class="slider-controls center">
                             <div class="controls">
-                                <a class="changeSlide active" href="#" data-slideid="1">
+                                <a class="changeSlide active" href="#" id="1">
                                     <i class="fa fa-circle"></i>
                                 </a>
-                                <a class="changeSlide no-active" href="#" data-slideid="2">
+                                <a class="changeSlide no-active" href="#" id="2">
                                     <i class="fa fa-circle"></i>
                                 </a>
-                                <a class="changeSlide no-active" href="#" data-slideid="3">
+                                <a class="changeSlide no-active" href="#" id="3">
                                     <i class="fa fa-circle"></i>
                                 </a>
-                                <a class="changeSlide no-active" href="#" data-slideid="4">
+                                <a class="changeSlide no-active" href="#" id="4">
                                     <i class="fa fa-circle"></i>
                                 </a>
-                                <a class="changeSlide no-active" href="#" data-slideid="5">
+                                <a class="changeSlide no-active" href="#" id="5">
+                                    <i class="fa fa-circle"></i>
+                                </a>
+                                <a class="changeSlide no-active" href="#" id="6">
                                     <i class="fa fa-circle"></i>
                                 </a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="clm-right">
                         <div class="col-md-7">
                             <div id="slide1" class="slide-image">
                                 <a class="btnLogo" href="https://asana.com/" target="_blank"><image class="logo" src="assets/images/logo/asana-logo.png"></image></a>
-                                <button id="expandBtn"><i class="fa fa-expand-alt expand"></i></button>
+                                <button id="expand1" class="expandBtn"><i class="fa fa-expand-alt expand"></i></button>
                             </div>
                             <div id="slide2" class="slide-image">
                                 <a class="btnLogo" href="https://asana.com/" target="_blank"><image class="logo" src="assets/images/logo/asana-logo.png"></image></a>
-                                <button id="expandBtn"><i class="fa fa-expand-alt expand"></i></button>
+                                <button id="expand2" class="expandBtn"><i class="fa fa-expand-alt expand"></i></button>
                             </div>
                             <div id="slide3" class="slide-image">
                                 <a class="btnLogo" href="https://asana.com/" target="_blank"><image class="logo" src="assets/images/logo/asana-logo.png"></image></a>
-                                <button id="expandBtn"><i class="fa fa-expand-alt expand"></i></button>
+                                <button id="expand3" class="expandBtn"><i class="fa fa-expand-alt expand"></i></button>
                             </div>
                             <div id="slide4" class="slide-image">
                                 <a class="btnLogo" href="https://discordapp.com/" target="_blank"><image class="logo" src="assets/images/logo/discord-logo.png"></image></a>
-                                <button id="expandBtn"><i class="fa fa-expand-alt expand white"></i></button>
+                                <button id="expand4" class="expandBtn"><i class="fa fa-expand-alt expand white"></i></button>
                             </div>
                             <div id="slide5" class="slide-image">
                                 <a class="btnLogo" href="https://www.yoyogames.com/get" target="_blank"><image class="logo" src="assets/images/logo/gamemaker-logo-white.png"></image></a>
-                                <button id="expandBtn"><i class="fa fa-expand-alt expand white"></i></button>
+                                <button id="expand5" class="expandBtn"><i class="fa fa-expand-alt expand white"></i></button>
                             </div>
                             <div id="slide6" class="slide-image">
                                 <a class="btnLogo" href="https://git-scm.com/" target="_blank"><image class="logo" src="assets/images/logo/git-logo.png"></image></a>
-                                <button id="expandBtn"><i class="fa fa-expand-alt expand white"></i></button>
+                                <button id="expand6" class="expandBtn"><i class="fa fa-expand-alt expand white"></i></button>
                             </div>
                         </div>
                     </div>
@@ -283,7 +287,7 @@
     <aside></aside>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!-- <script src="dist/simplebar.js"></script> -->
     <script src="js/main.js"></script>
 </body>
