@@ -2,6 +2,10 @@
 /* ########### VARIABILI DIMENSIONI ########### */
 /* ########### VARIABILI COLORI ########### */
 /* ########### VARIABILI COLORI ########### */
+@font-face {
+  font-family: Symtext;
+  src: url(../font/Symtext.ttf);
+}
 @keyframes loading {
   0% {
     transform: scaleX(0);
@@ -87,6 +91,21 @@ body {
 }
 .git {
   color: #f05033;
+}
+.lime {
+  background-color: #e5ff00;
+}
+.red {
+  background-color: #f95e5e;
+}
+.lightblue {
+  background-color: #1781d8;
+}
+.grey {
+  color: grey;
+}
+.gold {
+  color: goldenrod;
 }
 .titleSect {
   color: #ffffff;
@@ -345,10 +364,13 @@ body {
   font-size: 3em;
   font-weight: normal;
   letter-spacing: 0.1em;
-  padding: 4vh 0 3vh 0;
+  padding: 4vh 0 3vh 2.5vw;
 }
 .content #progetto .slideshow .clm-left .row .col-md-5 p {
   padding: 0px 20px 0px 50px;
+}
+.content #progetto .slideshow .clm-left .row .col-md-5 .right-stretch {
+  padding-right: 150px;
 }
 .content #progetto .slideshow .clm-left .row .col-md-5 .text-slides-container {
   width: auto;
@@ -359,7 +381,7 @@ body {
   font-size: 1.5em;
   color: #ffffff;
   letter-spacing: 0.1em;
-  font-weight: normal;
+  font-weight: bolder;
 }
 .content #progetto .slideshow .clm-left .row .col-md-5 .text-slides-container .slide {
   margin-top: 20px;
@@ -372,7 +394,7 @@ body {
   font-weight: 600;
 }
 .content #progetto .slideshow .clm-left .row .col-md-5 .text-slides-container .slide p {
-  padding-top: 30px;
+  padding-top: 20px;
 }
 .content #progetto .slideshow .clm-left .end {
   align-items: flex-end;
@@ -484,7 +506,6 @@ body {
   background-size: cover;
 }
 .content #gioco {
-  background-color: #070918;
   width: 100vw;
   height: 100vh;
 }
@@ -568,6 +589,57 @@ body {
 .content #gioco .container .gif-ctn .gif-container .second {
   width: 601px;
   height: auto;
+}
+.content #feedback {
+  width: 100vw;
+  height: 100vh;
+}
+.content #feedback .cards-container {
+  width: 85vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+}
+.content #feedback .cards-container .cards {
+  background-color: #ffffff;
+  width: 15vw;
+  height: 50vh;
+  margin: auto;
+}
+.content #feedback .cards-container .cards .header-cards {
+  height: 7vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.content #feedback .cards-container .cards .header-cards .nickname {
+  flex: 1;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.content #feedback .cards-container .cards .body-cards {
+  height: 38vh;
+}
+.content #feedback .cards-container .cards .body-cards .rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+}
+.content #feedback .cards-container .cards .body-cards .rating .star {
+  font-size: 18px;
+  margin: 0 4px;
+}
+.content #feedback .cards-container .cards .body-cards .description {
+  padding: 0 25px 15px 25px;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  font-weight: 100;
+}
+.content #feedback .cards-container .cards .footer-cards {
+  height: 6vh;
 }
 .content #footer {
   width: 100vw;

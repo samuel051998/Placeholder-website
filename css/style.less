@@ -1,5 +1,7 @@
 @import "_variables.less";
 
+@font-face { font-family: Symtext; src: url(../font/Symtext.ttf); }
+
 @keyframes loading {
     0% {
         transform: scaleX(0);
@@ -106,6 +108,26 @@ body {
 
 .git {
     color: #f05033;
+}
+
+.lime {
+    background-color: rgb(229, 255, 0);
+}
+
+.red {
+    background-color: #f95e5e;
+}
+
+.lightblue {
+    background-color: rgb(23, 129, 216);
+}
+
+.grey {
+    color: grey;
+}
+
+.gold {
+    color: goldenrod;
 }
 
 .titleSect {
@@ -405,11 +427,15 @@ body {
                             font-size: 3em;
                             font-weight: normal;
                             letter-spacing: 0.1em;
-                            padding: 4vh 0 3vh 0;
+                            padding: 4vh 0 3vh 2.5vw;
                         }
 
                         p {
                             padding: 0px 20px 0px 50px;
+                        }
+
+                        .right-stretch {
+                            padding-right: 150px;
                         }
 
                         .text-slides-container {
@@ -421,7 +447,7 @@ body {
                                 font-size: 1.5em;
                                 color: @primary;
                                 letter-spacing: 0.1em;
-                                font-weight: normal;
+                                font-weight: bolder;
                             }
 
                             .slide {
@@ -436,7 +462,7 @@ body {
                                 }
 
                                 p {
-                                    padding-top: 30px;
+                                    padding-top: 20px;
                                 }
                             }
                         }
@@ -579,7 +605,6 @@ body {
     }
 
     #gioco {
-        background-color: @darkBlueBg;
         width: @fullWidth;
         height: @fullHeight;   
         
@@ -675,6 +700,67 @@ body {
                         width: 601px;
                         height: auto;
                     }
+                }
+            }
+        }
+    }
+
+    #feedback {
+        width: @fullWidth;
+        height: @fullHeight;
+
+        .cards-container {
+            width: 85vw;
+            height: 80vh;
+            display: flex;
+            flex-direction: row;
+
+            .cards {
+                background-color: @primary;
+                width: 15vw;
+                height: 50vh;
+                margin: auto;
+
+                .header-cards {
+                    height: 7vh;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;                 
+
+                    .nickname {
+                        flex: 1;
+                        text-align: center;
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                }
+
+                .body-cards {
+                    height: 38vh;
+                    
+                    .rating {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        height: 8vh;
+
+                        .star {
+                            font-size: 18px;
+                            margin: 0 4px;
+                        }
+                    }
+                    
+                    .description {
+                        padding: 0 25px 15px 25px;
+                        font-size: 15px;
+                        letter-spacing: 0.1em;
+                        font-weight: 100;
+                    }
+                }
+
+                .footer-cards {
+                    height: 6vh;
                 }
             }
         }
