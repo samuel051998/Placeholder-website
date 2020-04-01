@@ -129,7 +129,7 @@ body {
   font-weight: 200;
 }
 .stretch {
-  padding: 15px;
+  padding: 55px;
   max-width: 80ch;
   margin: 50px auto;
 }
@@ -515,6 +515,14 @@ body {
   background-color: #472047;
   border: 10px #290929 solid;
   margin: auto;
+}
+.content #gioco .box .title-box {
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.content #gioco .box .p2 {
+  padding-top: 7px;
 }
 .content #gioco .container {
   width: 85vw;
