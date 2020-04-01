@@ -143,6 +143,10 @@ body {
     height: 120vh !important;
 }
 
+.longPage2 {
+    height: 120vh !important;
+}
+
 .mid-large {
     width: 450px;
     height: auto;
@@ -374,7 +378,7 @@ body {
     }
 
     #progetto {
-        background-color: @greyBg;
+        background-color: #472047;
         width: @fullWidth;
         height: @fullHeight;
 
@@ -397,7 +401,7 @@ body {
                         margin-left: 7vw;
                     
                         .titleSlideshow {
-                            color: #434343;
+                            color: @primary;
                             font-size: 3em;
                             font-weight: normal;
                             letter-spacing: 0.1em;
@@ -415,7 +419,7 @@ body {
                             h3 {
                                 padding: 0px 20px 0px 50px;
                                 font-size: 1.5em;
-                                color: #434343;
+                                color: @primary;
                                 letter-spacing: 0.1em;
                                 font-weight: normal;
                             }
@@ -542,19 +546,12 @@ body {
 
         .spaceButton {
             width: auto;
-            height: 17.5vh;
-            margin: 54px auto;
-
-            .cit {
-                text-align: center;
-                font-weight: 100;
-                font-size: 21px;
-                color: @fontGrey;
-                margin-bottom: 60px;
-            }
+            height: 28vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             .button {
-                margin: 50px auto;
                 display: block;
                 text-decoration: none;
                 width: 225px;
@@ -648,6 +645,7 @@ body {
 
                     .cont-arg {
                         display: flex;
+                        transition: all 1s;
                         
                         .hinner-paragraph {
                             font-size: 15px;

@@ -117,6 +117,9 @@ body {
 .longPage {
   height: 120vh !important;
 }
+.longPage2 {
+  height: 120vh !important;
+}
 .mid-large {
   width: 450px;
   height: auto;
@@ -315,7 +318,7 @@ body {
   font-size: 12px;
 }
 .content #progetto {
-  background-color: #cfcfcf;
+  background-color: #472047;
   width: 100vw;
   height: 100vh;
 }
@@ -338,7 +341,7 @@ body {
   margin-left: 7vw;
 }
 .content #progetto .slideshow .clm-left .row .col-md-5 .titleSlideshow {
-  color: #434343;
+  color: #ffffff;
   font-size: 3em;
   font-weight: normal;
   letter-spacing: 0.1em;
@@ -354,7 +357,7 @@ body {
 .content #progetto .slideshow .clm-left .row .col-md-5 .text-slides-container h3 {
   padding: 0px 20px 0px 50px;
   font-size: 1.5em;
-  color: #434343;
+  color: #ffffff;
   letter-spacing: 0.1em;
   font-weight: normal;
 }
@@ -453,18 +456,12 @@ body {
 }
 .content #divario .spaceButton {
   width: auto;
-  height: 17.5vh;
-  margin: 54px auto;
-}
-.content #divario .spaceButton .cit {
-  text-align: center;
-  font-weight: 100;
-  font-size: 21px;
-  color: #515151;
-  margin-bottom: 60px;
+  height: 28vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .content #divario .spaceButton .button {
-  margin: 50px auto;
   display: block;
   text-decoration: none;
   width: 225px;
@@ -547,6 +544,7 @@ body {
 }
 .content #gioco .container .ctn-el .el .cont-arg {
   display: flex;
+  transition: all 1s;
 }
 .content #gioco .container .ctn-el .el .cont-arg .hinner-paragraph {
   font-size: 15px;

@@ -48,12 +48,13 @@ function clickExtendedText2(event) {
 
     if (text.classList.contains('closed')) {
         text.classList.remove('closed');
-        gameSection.classList.add('longPage');
+        gameSection.classList.add('longPage2');
         btn1.classList.add('hidden');
         btn2.classList.remove('hidden');
+        
     } else {
         text.classList.add('closed');
-        gameSection.classList.remove('longPage');
+        gameSection.classList.remove('longPage2');
         btn1.classList.remove('hidden');
         btn2.classList.add('hidden');
     }
@@ -88,7 +89,7 @@ function carousel() {
     } 
 
     x[slideIndex-1].style.display = 'block';
-    setTimeout(carousel, 10000); 
+    setTimeout(carousel, 15000); 
 }
 
 let slideIndex2 = 0;
@@ -109,7 +110,7 @@ function carousel2() {
     } 
    
     x[slideIndex2-1].style.display = 'block'; 
-    setTimeout(carousel2, 10000); 
+    setTimeout(carousel2, 15000); 
 }
 // ############### CAROUSEL ####################
 
