@@ -89,7 +89,7 @@ function carousel() {
     } 
 
     x[slideIndex-1].style.display = 'block';
-    setTimeout(carousel, 15000); 
+    setTimeout(carousel, 25000); 
 }
 
 let slideIndex2 = 0;
@@ -110,7 +110,7 @@ function carousel2() {
     } 
    
     x[slideIndex2-1].style.display = 'block'; 
-    setTimeout(carousel2, 15000); 
+    setTimeout(carousel2, 25000); 
 }
 // ############### CAROUSEL ####################
 
